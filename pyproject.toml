@@ -1,0 +1,8 @@
+[project]
+name = "cocal"
+version = "0.1.0"
+description = "Calibrating offline RL policies (TD3+BC) with conformal methods"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,4 +1,12 @@
 vscode/
 CLAUDE.md
+claude/
 
 ref_papers/
+# run artefacts (git-ignored); copy golden ones into results/
+runs/*
+!runs/.gitkeep
+__pycache__/
+*.pyc
+.DS_Store
+*.egg-info/
