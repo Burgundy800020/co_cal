@@ -1,6 +1,7 @@
-vscode/
+.vscode/
 CLAUDE.md
 claude/
+AGENTS.md
 
 ref_papers/
 # run artefacts (git-ignored); copy golden ones into results/
