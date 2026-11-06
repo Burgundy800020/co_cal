@@ -15,14 +15,39 @@ from cocal.logging_utils import read_jsonl
 
 
 def main(exp_dir):
-    rows = [r for r in read_jsonl(os.path.join(exp_dir, "train_log.jsonl")) if r["kind"] == "eval"]
-    steps = [r["step"] for r in rows]
-    m = [r["mean_return"] for r in rows]
-    s = [r["std_return"] for r in rows]
-    plt.figure(figsize=(5, 3.5))
-    plt.plot(steps, m)
-    plt.fill_between(steps, [a - b for a, b in zip(m, s)], [a + b for a, b in zip(m, s)], alpha=0.2)
-    plt.xlabel("step"); plt.ylabel("eval return"); plt.tight_layout()
+    log = list(read_jsonl(os.path.join(exp_dir, "train_log.jsonl")))
+    ev = [r for r in log if r["kind"] == "eval"]
+    tr = [r for r in log if r["kind"] == "train"]
+
+    def series(rows, key):
+        pts = [(r["step"], r[key]) for r in rows if key in r]
+        return [p[0] for p in pts], [p[1] for p in pts]
+
+    # One panel per quantity "space"; metrics sharing a space share an axis.
+    fig, axes = plt.subplots(4, 1, figsize=(6.5, 9), sharex=True)
+    ax = axes[0]
+    st = [r["step"] for r in ev]
+    m = [r["mean_return"] for r in ev]
+    sd = [r["std_return"] for r in ev]
+    ax.plot(st, m, marker="o", ms=3)
+    ax.fill_between(st, [a - b for a, b in zip(m, sd)], [a + b for a, b in zip(m, sd)], alpha=0.2)
+    ax.set_ylabel("eval return")
+
+    axes[1].plot(*series(tr, "q"), color="C2")
+    axes[1].set_ylabel("mean Q1")
+
+    for key, c in (("critic_loss", "C3"), ("bc_loss", "C4")):  # both MSE-type, same space
+        axes[2].plot(*series(tr, key), label=key, color=c)
+    axes[2].set_yscale("log")
+    axes[2].set_ylabel("MSE losses (log)")
+    axes[2].legend(fontsize=8)
+
+    axes[3].plot(*series(tr, "actor_loss"), color="C1")
+    axes[3].set_ylabel("actor loss")
+    axes[3].set_xlabel("step")
+    for a_ in axes:
+        a_.grid(alpha=0.3)
+    plt.tight_layout()
     out = os.path.join("results", "figures")
     os.makedirs(out, exist_ok=True)
     path = os.path.join(out, os.path.basename(os.path.normpath(exp_dir)) + "_training.png")
