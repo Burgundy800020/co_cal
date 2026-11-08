@@ -6,6 +6,7 @@ import json
 import os
 import sys
 
+import yaml
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -28,22 +29,31 @@ def main(exp_dir):
     ax = axes[0]
     st = [r["step"] for r in ev]
     m = [r["mean_return"] for r in ev]
-    sd = [r["std_return"] for r in ev]
-    ax.plot(st, m, marker="o", ms=3)
-    ax.fill_between(st, [a - b for a, b in zip(m, sd)], [a + b for a, b in zip(m, sd)], alpha=0.2)
+    lo = [min(r["returns"]) for r in ev]
+    hi = [max(r["returns"]) for r in ev]
+    ax.plot(st, m, marker="o", ms=3, label="mean")
+    ax.fill_between(st, lo, hi, alpha=0.2, label="min–max")
+    ax.legend(fontsize=8)
     ax.set_ylabel("eval return")
 
-    axes[1].plot(*series(tr, "q"), color="C2")
-    axes[1].set_ylabel("mean Q1")
+    for key, c in (("q1", "C2"), ("q2", "C5"), ("q", "C2")):  # "q" = legacy logs (Q1 only)
+        if any(key in r for r in tr):
+            axes[1].plot(*series(tr, key), color=c, label="q1" if key == "q" else key)
+    axes[1].set_ylabel("mean Q(s, a_data)")
+    axes[1].legend(fontsize=8)
 
-    for key, c in (("critic_loss", "C3"), ("bc_loss", "C4")):  # both MSE-type, same space
-        axes[2].plot(*series(tr, key), label=key, color=c)
+    axes[2].plot(*series(tr, "critic_loss"), color="C3")
     axes[2].set_yscale("log")
-    axes[2].set_ylabel("MSE losses (log)")
-    axes[2].legend(fontsize=8)
+    axes[2].set_ylabel("critic loss\n(return$^2$, log)")
 
-    axes[3].plot(*series(tr, "actor_loss"), color="C1")
-    axes[3].set_ylabel("actor loss")
+    # actor_loss = -lambda*Q + bc, with lambda*Q ~= alpha, so actor_loss + alpha ~= bc (action space)
+    with open(os.path.join(exp_dir, "config.yaml")) as f:
+        alpha = yaml.safe_load(f)["algo"]["alpha"]
+    sx, sy = series(tr, "actor_loss")
+    axes[3].plot(sx, [v + alpha for v in sy], color="C1", label=f"actor_loss + alpha ({alpha})")
+    axes[3].plot(*series(tr, "bc_loss"), color="C4", ls="--", label="bc_loss")
+    axes[3].set_ylabel("action-space MSE")
+    axes[3].legend(fontsize=8)
     axes[3].set_xlabel("step")
     for a_ in axes:
         a_.grid(alpha=0.3)

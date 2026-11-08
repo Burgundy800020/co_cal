@@ -95,7 +95,7 @@ class TD3BC:
         critic_loss.backward()
         self.critic_opt.step()
 
-        stats = {"critic_loss": critic_loss.item(), "q": q1.mean().item()}
+        stats = {"critic_loss": critic_loss.item(), "q1": q1.mean().item(), "q2": q2.mean().item()}
         if self.total_it % self.policy_delay == 0:
             pi = self.actor(obs)
             q = self.critic.q1_only(obs, pi)
