@@ -1,4 +1,4 @@
-"""Train TD3+BC on a Minari dataset. Artefacts -> runs/<name>/<timestamp>/ (git-ignored).
+"""Train TD3+BC on a Minari dataset. Artefacts (incl. figures/) -> runs/<name>/<timestamp>/ (git-ignored).
 
 Usage: python drivers/train_offline.py configs/td3bc_hopper_medium.yaml [train.steps=1000 seed=1 ...]
 """
@@ -10,11 +10,13 @@ import numpy as np
 import torch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "analysis"))
 from cocal.config import load_config
 from cocal.data import load_offline
 from cocal.evaluation import evaluate
 from cocal.logging_utils import JsonlLogger, make_run_dir, save_config, write_json
 from cocal.td3_bc import TD3BC, normalize_state
+from plot_training import main as plot_training
 
 
 def main():
@@ -56,6 +58,7 @@ def main():
         if step % t["save_every"] == 0 or step == t["steps"]:
             agent.save(os.path.join(run_dir, "model.pt"))
     write_json(os.path.join(run_dir, "done.json"), {"steps": t["steps"]})
+    plot_training(run_dir, os.path.join(run_dir, "figures"))  # untracked: figures live in the run dir
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 """Plot eval-return curves. Reads golden artefacts from results/, writes figures to results/figures/.
 
-Usage: python analysis/plot_training.py results/<experiment_dir>
+Usage: python analysis/plot_training.py <experiment_dir> [out_dir]   (out_dir default: results/figures)
 """
 import json
 import os
@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 from cocal.logging_utils import read_jsonl
 
 
-def main(exp_dir):
+def main(exp_dir, out=os.path.join("results", "figures")):
     log = list(read_jsonl(os.path.join(exp_dir, "train_log.jsonl")))
     ev = [r for r in log if r["kind"] == "eval"]
     tr = [r for r in log if r["kind"] == "train"]
@@ -58,7 +58,6 @@ def main(exp_dir):
     for a_ in axes:
         a_.grid(alpha=0.3)
     plt.tight_layout()
-    out = os.path.join("results", "figures")
     os.makedirs(out, exist_ok=True)
     path = os.path.join(out, os.path.basename(os.path.normpath(exp_dir)) + "_training.png")
     plt.savefig(path, dpi=150)
@@ -66,4 +65,4 @@ def main(exp_dir):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(*sys.argv[1:3])
