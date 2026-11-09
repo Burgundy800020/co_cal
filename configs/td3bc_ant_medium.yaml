@@ -1,0 +1,19 @@
+dataset: mujoco/ant/medium-v0
+seed: 0
+device: cpu
+normalize_state: true
+train:
+  steps: 20_000
+  batch_size: 256
+  eval_every: 5000
+  eval_episodes: 20
+  save_every: 20_000
+algo:
+  alpha: 4.0 
+  lr: 3.0e-4
+  gamma: 0.99
+  tau: 0.005
+  policy_noise: 0.2
+  noise_clip: 0.5
+  policy_delay: 2
+  hidden: [256, 256]
