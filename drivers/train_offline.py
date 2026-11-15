@@ -11,11 +11,11 @@ import torch
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "analysis"))
-from cocal.config import load_config
-from cocal.data import load_offline
-from cocal.evaluation import evaluate
-from cocal.logging_utils import JsonlLogger, make_run_dir, save_config, write_json
-from cocal.td3_bc import TD3BC, normalize_state
+from safe_f2o.config import load_config
+from safe_f2o.data import load_offline
+from safe_f2o.evaluation import evaluate
+from safe_f2o.logging_utils import JsonlLogger, make_run_dir, save_config, write_json
+from safe_f2o.td3_bc import TD3BC, normalize_state
 from plot_training import main as plot_training
 
 

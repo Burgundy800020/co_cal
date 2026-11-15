@@ -1,9 +1,9 @@
 import sys, os
 import numpy as np
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
-from cocal.conformal import conformal_quantile
-from cocal.replay_buffer import ReplayBuffer
-from cocal.td3_bc import TD3BC
+from safe_f2o.intervention import conformal_quantile
+from safe_f2o.replay_buffer import ReplayBuffer
+from safe_f2o.td3_bc import TD3BC
 
 
 def test_conformal_quantile():

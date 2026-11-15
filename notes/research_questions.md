@@ -1,5 +1,7 @@
 # Open research questions
-- Conformal prediction in reward/return space or action space?
-- Is a large conformal set C(x) a usable "don't trust the policy" signal?
-- PCA (or similar) on states to detect leaving the training support?
-- Evaluation: expert takeover when flagged; coverage of intervals (episode-level and step-level).
+- Which signal tells us the policy is unreliable: Q-value, Q-ensemble disagreement, something else?
+- How to set the intervention threshold (cf. ThriftyDAgger) under a fixed expert budget?
+- How many expert steps per takeover, and when to hand control back?
+- Fine-tuning loss: TD3 + online BC on expert steps; how to weight the two?
+- Expert: infinite-budget online RL on top of the offline model (mimics a human who can recover).
+- Evaluation: episode return vs. number of online terminations; compare to offline-to-online TD3 and DAgger.

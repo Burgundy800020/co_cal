@@ -1,7 +1,7 @@
 [project]
-name = "cocal"
+name = "safe_f2o"
 version = "0.1.0"
-description = "Calibrating offline RL policies (TD3+BC) with conformal methods"
+description = "Offline-to-online RL (TD3+BC) assisted by selective expert intervention"
 requires-python = ">=3.10"
 
 [tool.setuptools.packages.find]

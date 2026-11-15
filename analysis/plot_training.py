@@ -12,7 +12,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
-from cocal.logging_utils import read_jsonl
+from safe_f2o.logging_utils import read_jsonl
 
 
 def main(exp_dir, out=os.path.join("results", "figures")):
