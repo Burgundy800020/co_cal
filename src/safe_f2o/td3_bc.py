@@ -2,6 +2,8 @@
 
 Actor loss: -lmbda * Q(s, pi(s)) + MSE(pi(s), a),  lmbda = alpha / mean|Q(s, pi(s))|.
 Optionally normalises states with dataset mean/std (as in the paper); `normalize_state` returns stats.
+`bc_weight` scales the BC term: 1 = TD3+BC, 0 = TD3 (lmbda only rescales the Q term, which Adam
+is ~invariant to). Online fine-tuning anneals it 1 -> 0.
 """
 import copy
 
@@ -58,12 +60,12 @@ def normalize_state(buffer, eps=1e-3):
 class TD3BC:
     def __init__(self, obs_dim, act_dim, max_action, device="cpu", hidden=(256, 256),
                  lr=3e-4, gamma=0.99, tau=0.005, policy_noise=0.2, noise_clip=0.5,
-                 policy_delay=2, alpha=2.5):
+                 policy_delay=2, alpha=2.5, bc_weight=1.0):
         self.device = torch.device(device)
         self.max_action = max_action
         self.gamma, self.tau = gamma, tau
         self.policy_noise, self.noise_clip = policy_noise * max_action, noise_clip * max_action
-        self.policy_delay, self.alpha = policy_delay, alpha
+        self.policy_delay, self.alpha, self.bc_weight = policy_delay, alpha, bc_weight
 
         self.actor = Actor(obs_dim, act_dim, max_action, hidden).to(self.device)
         self.critic = Critic(obs_dim, act_dim, hidden).to(self.device)
@@ -78,7 +80,8 @@ class TD3BC:
         o = torch.as_tensor(np.asarray(obs), dtype=torch.float32, device=self.device)
         return self.actor(o.unsqueeze(0)).squeeze(0).cpu().numpy()
 
-    def update(self, buffer, batch_size=256):
+    def update(self, buffer, batch_size=256, update_actor=True):
+        """One gradient step. `update_actor=False` trains only the critic (online critic warm-up)."""
         self.total_it += 1
         b = buffer.sample(batch_size)
         obs, act, rew, nobs, done = b["obs"], b["actions"], b["rewards"], b["next_obs"], b["dones"]
@@ -96,25 +99,39 @@ class TD3BC:
         self.critic_opt.step()
 
         stats = {"critic_loss": critic_loss.item(), "q1": q1.mean().item(), "q2": q2.mean().item()}
-        if self.total_it % self.policy_delay == 0:
+        if update_actor and self.total_it % self.policy_delay == 0:
             pi = self.actor(obs)
             q = self.critic.q1_only(obs, pi)
             lmbda = self.alpha / q.abs().mean().detach()
             bc = F.mse_loss(pi, act)
-            actor_loss = -lmbda * q.mean() + bc
+            actor_loss = -lmbda * q.mean() + self.bc_weight * bc
             self.actor_opt.zero_grad()
             actor_loss.backward()
             self.actor_opt.step()
-            for net, tgt in ((self.actor, self.actor_target), (self.critic, self.critic_target)):
+            stats.update(actor_loss=actor_loss.item(), bc_loss=bc.item(), q_term=(lmbda * q.mean()).item())
+        if self.total_it % self.policy_delay == 0:
+            nets = ((self.actor, self.actor_target), (self.critic, self.critic_target))
+            for net, tgt in nets if update_actor else nets[1:]:
                 for p, tp in zip(net.parameters(), tgt.parameters()):
                     tp.data.mul_(1 - self.tau).add_(self.tau * p.data)
-            stats.update(actor_loss=actor_loss.item(), bc_loss=bc.item())
         return stats
 
     def save(self, path):
-        torch.save({"actor": self.actor.state_dict(), "critic": self.critic.state_dict()}, path)
+        torch.save({
+            "actor": self.actor.state_dict(), "critic": self.critic.state_dict(),
+            "actor_target": self.actor_target.state_dict(), "critic_target": self.critic_target.state_dict(),
+            "actor_opt": self.actor_opt.state_dict(), "critic_opt": self.critic_opt.state_dict(),
+            "total_it": self.total_it,
+        }, path)
 
-    def load(self, path):
+    def load(self, path, load_optim=True):
+        """Loads nets; targets/optimisers too if present (old checkpoints: targets = copies of nets)."""
         sd = torch.load(path, map_location=self.device)
         self.actor.load_state_dict(sd["actor"])
         self.critic.load_state_dict(sd["critic"])
+        self.actor_target.load_state_dict(sd.get("actor_target", sd["actor"]))
+        self.critic_target.load_state_dict(sd.get("critic_target", sd["critic"]))
+        if load_optim and "actor_opt" in sd:
+            self.actor_opt.load_state_dict(sd["actor_opt"])
+            self.critic_opt.load_state_dict(sd["critic_opt"])
+        self.total_it = sd.get("total_it", 0)

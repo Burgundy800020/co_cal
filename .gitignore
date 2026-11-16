@@ -11,3 +11,15 @@ __pycache__/
 *.pyc
 .DS_Store
 *.egg-info/
+
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+writeups/**/main.pdf

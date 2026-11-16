@@ -1,4 +1,4 @@
-name: cocal
+name: safe_f2o
 channels:
   - conda-forge
 dependencies:

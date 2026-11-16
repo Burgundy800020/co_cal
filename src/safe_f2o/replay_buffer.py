@@ -72,3 +72,32 @@ class ReplayBuffer:
             dones=to_t(self.dones),
             timesteps=self.timesteps[idx],
         )
+
+
+class MixedBuffer:
+    """Balanced sampling from a fixed offline buffer and a growing online buffer (RLPD-style).
+
+    `add` goes to the online buffer; `sample` draws round(online_frac * batch_size) from online and
+    the rest from offline (all-offline until the online buffer holds at least one such share).
+    Same interface as ReplayBuffer, so agents are unchanged.
+    """
+
+    def __init__(self, offline, online, online_frac=0.5):
+        self.offline, self.online, self.online_frac = offline, online, online_frac
+
+    @property
+    def size(self):
+        return self.offline.size + self.online.size
+
+    def add(self, *args, **kw):
+        self.online.add(*args, **kw)
+
+    def sample(self, batch_size):
+        n_on = int(round(self.online_frac * batch_size))
+        if self.online.size < max(n_on, 1):
+            return self.offline.sample(batch_size)
+        if n_on == batch_size:
+            return self.online.sample(batch_size)
+        a, b = self.offline.sample(batch_size - n_on), self.online.sample(n_on)
+        return {k: (np.concatenate([a[k], b[k]]) if isinstance(a[k], np.ndarray) else torch.cat([a[k], b[k]]))
+                for k in a}

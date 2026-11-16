@@ -8,7 +8,8 @@ Full plan in `claude/reorganize.md`.
 Offline pretraining: TD3+BC on Minari MuJoCo (HalfCheetah, Hopper, Walker2d).
 
 ## Layout
-- `src/safe_f2o/` core modules (data, TD3+BC, evaluation, `intervention/`)
+- `src/safe_f2o/` core modules (data, TD3+BC, evaluation, `checkpoint` (agent/run-dir loading),
+  `online` (env-agnostic online loop with termination counting, pluggable reset), `intervention/`)
 - `drivers/` run experiments, write artefacts to `runs/` (git-ignored)
 - `analysis/` plotting/inference; read from `results/` (git-tracked), write to `results/figures/`
 - `configs/` YAML hyperparameters; CLI overrides via `key=value`
@@ -16,8 +17,10 @@ Offline pretraining: TD3+BC on Minari MuJoCo (HalfCheetah, Hopper, Walker2d).
 
 ## Workflow
 ```
-conda env create -f environment.yml && conda activate cocal && pip install -e .
+conda env create -f environment.yml && conda activate safe_f2o && pip install -e .
 python drivers/train_offline.py configs/td3bc_hopper_medium.yaml train.steps=20000
 cp -r runs/<name>/<timestamp> results/<experiment>     # promote a golden run
 python analysis/plot_training.py results/<experiment>
+# online fine-tuning (unlimited budget) from an offline run -> expert phase 1 / O2O baseline
+python drivers/train_online.py configs/online_td3_ant_medium.yaml [online.total_steps=...]
 ```
