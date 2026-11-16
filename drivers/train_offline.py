@@ -15,7 +15,8 @@ from safe_f2o.config import load_config
 from safe_f2o.data import load_offline
 from safe_f2o.evaluation import evaluate
 from safe_f2o.logging_utils import JsonlLogger, make_run_dir, save_config, write_json
-from safe_f2o.td3_bc import TD3BC, normalize_state
+from safe_f2o.checkpoint import build_agent
+from safe_f2o.td3_bc import normalize_state
 from plot_training import main as plot_training
 
 
@@ -41,10 +42,7 @@ def main():
 
     obs_dim, act_dim = buf.obs.shape[1], buf.actions.shape[1]
     max_action = float(env.action_space.high[0])
-    a = cfg["algo"]
-    agent = TD3BC(obs_dim, act_dim, max_action, cfg["device"], hidden=tuple(a["hidden"]), lr=a["lr"],
-                  gamma=a["gamma"], tau=a["tau"], policy_noise=a["policy_noise"],
-                  noise_clip=a["noise_clip"], policy_delay=a["policy_delay"], alpha=a["alpha"])
+    agent = build_agent(obs_dim, act_dim, max_action, cfg["algo"], cfg["device"])
 
     t = cfg["train"]
     for step in range(1, t["steps"] + 1):
