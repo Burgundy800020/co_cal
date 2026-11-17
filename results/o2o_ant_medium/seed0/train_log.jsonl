@@ -1,0 +1,584 @@
+{"kind": "eval", "step": 0, "n_terminations": 0, "mean_return": 722.8954183734771, "std_return": 1029.869908646018, "returns": [3414.878280905747, 1054.6667523151018, 77.0790551064616, 828.8449859374098, 274.9405829607526, 103.48808934117602, 618.5189185344409, 1549.4773327485173, 3074.8008048600354, 96.07221603644305, 515.0914369036665, 139.03326313457595, 227.157202554619, 1013.4116134555948, 6.911527164836873, 57.15124208495545, 18.51532874821097, 1998.7567820199345, 91.82709978449188, -702.7141471274291]}
+{"kind": "episode", "step": 352, "n_terminations": 1, "episode": 1, "ret": 1638.4784616767352, "length": 352, "terminated": true}
+{"kind": "episode", "step": 658, "n_terminations": 2, "episode": 2, "ret": 1439.8668081508536, "length": 306, "terminated": true}
+{"kind": "episode", "step": 754, "n_terminations": 3, "episode": 3, "ret": 502.31200697768844, "length": 96, "terminated": true}
+{"kind": "episode", "step": 869, "n_terminations": 4, "episode": 4, "ret": 525.8300865687581, "length": 115, "terminated": true}
+{"kind": "episode", "step": 895, "n_terminations": 5, "episode": 5, "ret": 42.346187289128366, "length": 26, "terminated": true}
+{"kind": "episode", "step": 922, "n_terminations": 6, "episode": 6, "ret": 49.92627247044355, "length": 27, "terminated": true}
+{"kind": "train", "step": 1000, "n_terminations": 6, "bc_weight": 0.5, "sps": 320.76172098750743, "critic_loss": 94.36831638813018, "q1": 250.21036581420898, "q2": 250.21110958862306}
+{"kind": "episode", "step": 1175, "n_terminations": 7, "episode": 7, "ret": 1056.0524405978467, "length": 253, "terminated": true}
+{"kind": "episode", "step": 1271, "n_terminations": 8, "episode": 8, "ret": 370.1050490431516, "length": 96, "terminated": true}
+{"kind": "episode", "step": 1462, "n_terminations": 9, "episode": 9, "ret": 859.7000841907058, "length": 191, "terminated": true}
+{"kind": "episode", "step": 1480, "n_terminations": 10, "episode": 10, "ret": 32.08366231309821, "length": 18, "terminated": true}
+{"kind": "episode", "step": 1554, "n_terminations": 11, "episode": 11, "ret": 333.8992011268915, "length": 74, "terminated": true}
+{"kind": "episode", "step": 1575, "n_terminations": 12, "episode": 12, "ret": 29.373360318040664, "length": 21, "terminated": true}
+{"kind": "episode", "step": 1594, "n_terminations": 13, "episode": 13, "ret": 40.03834852237949, "length": 19, "terminated": true}
+{"kind": "train", "step": 2000, "n_terminations": 13, "bc_weight": 0.5, "sps": 325.6965082646682, "critic_loss": 202.6612791404724, "q1": 253.85264346313477, "q2": 253.85494512939454}
+{"kind": "episode", "step": 2474, "n_terminations": 14, "episode": 14, "ret": 4468.95808564001, "length": 880, "terminated": true}
+{"kind": "episode", "step": 2697, "n_terminations": 15, "episode": 15, "ret": 1051.3371116629744, "length": 223, "terminated": true}
+{"kind": "episode", "step": 2786, "n_terminations": 16, "episode": 16, "ret": 360.6484555372486, "length": 89, "terminated": true}
+{"kind": "train", "step": 3000, "n_terminations": 16, "bc_weight": 0.5, "sps": 326.383670358021, "critic_loss": 191.2861573677063, "q1": 260.03447790527343, "q2": 260.03164785766603}
+{"kind": "episode", "step": 3786, "n_terminations": 16, "episode": 17, "ret": 1064.4274654863543, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 3812, "n_terminations": 17, "episode": 18, "ret": 29.45495049995933, "length": 26, "terminated": true}
+{"kind": "train", "step": 4000, "n_terminations": 17, "bc_weight": 0.5, "sps": 323.02956045363493, "critic_loss": 219.22286251068115, "q1": 249.2721874847412, "q2": 249.27350863647462}
+{"kind": "episode", "step": 4184, "n_terminations": 18, "episode": 19, "ret": 1819.6997055399781, "length": 372, "terminated": true}
+{"kind": "episode", "step": 4205, "n_terminations": 19, "episode": 20, "ret": 21.008171956481085, "length": 21, "terminated": true}
+{"kind": "episode", "step": 4237, "n_terminations": 20, "episode": 21, "ret": 78.77075237136525, "length": 32, "terminated": true}
+{"kind": "episode", "step": 4321, "n_terminations": 21, "episode": 22, "ret": 158.3819383533147, "length": 84, "terminated": true}
+{"kind": "episode", "step": 4383, "n_terminations": 22, "episode": 23, "ret": 254.30485957822927, "length": 62, "terminated": true}
+{"kind": "episode", "step": 4395, "n_terminations": 23, "episode": 24, "ret": 5.368162614309293, "length": 12, "terminated": true}
+{"kind": "train", "step": 5000, "n_terminations": 23, "bc_weight": 0.5, "sps": 321.44095659535776, "critic_loss": 228.94979332733155, "q1": 241.6583659362793, "q2": 241.6618229675293}
+{"kind": "episode", "step": 5395, "n_terminations": 23, "episode": 25, "ret": 545.7811334862977, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 5999, "n_terminations": 24, "episode": 26, "ret": 2437.0867429822947, "length": 604, "terminated": true}
+{"kind": "train", "step": 6000, "n_terminations": 24, "bc_weight": 0.499, "sps": 255.91751096341565, "critic_loss": 222.42900521087645, "q1": 232.49364778137206, "q2": 232.50060664367675, "actor_loss": -0.9026273344755172, "bc_loss": 0.028786543764173986, "q_term": 0.9170060636997223}
+{"kind": "episode", "step": 6999, "n_terminations": 24, "episode": 27, "ret": 1337.5951972550786, "length": 1000, "terminated": false}
+{"kind": "train", "step": 7000, "n_terminations": 24, "bc_weight": 0.498, "sps": 255.690655506991, "critic_loss": 214.7345871887207, "q1": 235.3443688659668, "q2": 235.33670770263672, "actor_loss": -0.9066722594499588, "bc_loss": 0.028978037163615227, "q_term": 0.9211178131103516}
+{"kind": "episode", "step": 7999, "n_terminations": 24, "episode": 28, "ret": 3630.4129729664005, "length": 1000, "terminated": false}
+{"kind": "train", "step": 8000, "n_terminations": 24, "bc_weight": 0.497, "sps": 253.44532863234582, "critic_loss": 201.5974085083008, "q1": 243.4626135559082, "q2": 243.45925357055665, "actor_loss": -0.9167888144254684, "bc_loss": 0.02814227282628417, "q_term": 0.9307895812988282}
+{"kind": "episode", "step": 8999, "n_terminations": 24, "episode": 29, "ret": 2565.1078967820795, "length": 1000, "terminated": false}
+{"kind": "train", "step": 9000, "n_terminations": 24, "bc_weight": 0.496, "sps": 252.87256948080656, "critic_loss": 205.80577730560302, "q1": 251.83689166259765, "q2": 251.834140914917, "actor_loss": -0.9236916772127152, "bc_loss": 0.027976175334304573, "q_term": 0.9375818885564804}
+{"kind": "episode", "step": 9508, "n_terminations": 25, "episode": 30, "ret": 686.993913190006, "length": 509, "terminated": true}
+{"kind": "train", "step": 10000, "n_terminations": 25, "bc_weight": 0.495, "sps": 251.83798684473055, "critic_loss": 211.54983184051514, "q1": 258.190879776001, "q2": 258.19045460510256, "actor_loss": -0.9300680128335953, "bc_loss": 0.027699342615902425, "q_term": 0.943793048620224}
+{"kind": "episode", "step": 10205, "n_terminations": 26, "episode": 31, "ret": 2325.9168377048277, "length": 697, "terminated": true}
+{"kind": "episode", "step": 10468, "n_terminations": 27, "episode": 32, "ret": 514.9222203841559, "length": 263, "terminated": true}
+{"kind": "train", "step": 11000, "n_terminations": 27, "bc_weight": 0.494, "sps": 244.27295973189462, "critic_loss": 221.56581731414795, "q1": 264.11613346862794, "q2": 264.112677734375, "actor_loss": -0.9344294698238372, "bc_loss": 0.027592480409890412, "q_term": 0.9480739612579345}
+{"kind": "episode", "step": 11264, "n_terminations": 28, "episode": 33, "ret": 2510.775293862656, "length": 796, "terminated": true}
+{"kind": "episode", "step": 11592, "n_terminations": 29, "episode": 34, "ret": 1045.9778124678166, "length": 328, "terminated": true}
+{"kind": "episode", "step": 11819, "n_terminations": 30, "episode": 35, "ret": 729.6622849799544, "length": 227, "terminated": true}
+{"kind": "train", "step": 12000, "n_terminations": 30, "bc_weight": 0.493, "sps": 239.95604442881213, "critic_loss": 229.4142919921875, "q1": 269.7233532409668, "q2": 269.7225993347168, "actor_loss": -0.9380340713262558, "bc_loss": 0.027023691415786744, "q_term": 0.9513702774047852}
+{"kind": "episode", "step": 12819, "n_terminations": 30, "episode": 36, "ret": 3726.152962661712, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 12844, "n_terminations": 31, "episode": 37, "ret": 13.407437318016449, "length": 25, "terminated": true}
+{"kind": "train", "step": 13000, "n_terminations": 31, "bc_weight": 0.492, "sps": 234.81179021327918, "critic_loss": 237.59084461975098, "q1": 274.5541546630859, "q2": 274.5547118988037, "actor_loss": -0.9418787397146225, "bc_loss": 0.026994970358908178, "q_term": 0.9551737915277481}
+{"kind": "episode", "step": 13844, "n_terminations": 31, "episode": 38, "ret": 4012.652007164881, "length": 1000, "terminated": false}
+{"kind": "train", "step": 14000, "n_terminations": 31, "bc_weight": 0.491, "sps": 224.90589517989318, "critic_loss": 246.20126748657228, "q1": 280.02485189819333, "q2": 280.025169342041, "actor_loss": -0.9446239731311799, "bc_loss": 0.0266916566118598, "q_term": 0.9577428654432297}
+{"kind": "episode", "step": 14844, "n_terminations": 31, "episode": 39, "ret": -77.34377825150443, "length": 1000, "terminated": false}
+{"kind": "train", "step": 15000, "n_terminations": 31, "bc_weight": 0.49, "sps": 217.64069471852235, "critic_loss": 246.15626756286622, "q1": 278.44472204589846, "q2": 278.442413848877, "actor_loss": -0.9356247000694274, "bc_loss": 0.026431628324091433, "q_term": 0.9485894107818603}
+{"kind": "episode", "step": 15844, "n_terminations": 31, "episode": 40, "ret": 5573.853127449006, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 15887, "n_terminations": 32, "episode": 41, "ret": 63.25691361183584, "length": 43, "terminated": true}
+{"kind": "train", "step": 16000, "n_terminations": 32, "bc_weight": 0.489, "sps": 236.52280066232862, "critic_loss": 248.5689645996094, "q1": 279.87718811035154, "q2": 279.88057244873045, "actor_loss": -0.9292373918294906, "bc_loss": 0.026652684677392246, "q_term": 0.9422838988304139}
+{"kind": "episode", "step": 16033, "n_terminations": 33, "episode": 42, "ret": 678.3218914251142, "length": 146, "terminated": true}
+{"kind": "episode", "step": 16073, "n_terminations": 34, "episode": 43, "ret": 76.49661098357633, "length": 40, "terminated": true}
+{"kind": "episode", "step": 16218, "n_terminations": 35, "episode": 44, "ret": 586.5036291369029, "length": 145, "terminated": true}
+{"kind": "episode", "step": 16776, "n_terminations": 36, "episode": 45, "ret": 2392.4875159496387, "length": 558, "terminated": true}
+{"kind": "train", "step": 17000, "n_terminations": 36, "bc_weight": 0.488, "sps": 245.67942482613904, "critic_loss": 257.4765997619629, "q1": 284.72578674316406, "q2": 284.72641412353516, "actor_loss": -0.9325665867328644, "bc_loss": 0.026494016800075768, "q_term": 0.9455089032649994}
+{"kind": "episode", "step": 17433, "n_terminations": 37, "episode": 46, "ret": 3356.1519448300646, "length": 657, "terminated": true}
+{"kind": "train", "step": 18000, "n_terminations": 37, "bc_weight": 0.487, "sps": 249.8505264679099, "critic_loss": 277.19901678466795, "q1": 288.33703674316405, "q2": 288.33811016845704, "actor_loss": -0.932412940979004, "bc_loss": 0.026680741656571628, "q_term": 0.9454197784662247}
+{"kind": "episode", "step": 18433, "n_terminations": 37, "episode": 47, "ret": 99.9866339432801, "length": 1000, "terminated": false}
+{"kind": "train", "step": 19000, "n_terminations": 37, "bc_weight": 0.486, "sps": 240.0241265706449, "critic_loss": 276.22258025360105, "q1": 285.22096578979495, "q2": 285.22008493041994, "actor_loss": -0.920099466919899, "bc_loss": 0.026814919840544463, "q_term": 0.9331448612213135}
+{"kind": "episode", "step": 19073, "n_terminations": 38, "episode": 48, "ret": 3019.956264853609, "length": 640, "terminated": true}
+{"kind": "episode", "step": 19414, "n_terminations": 39, "episode": 49, "ret": 1606.9243033687171, "length": 341, "terminated": true}
+{"kind": "episode", "step": 19583, "n_terminations": 40, "episode": 50, "ret": 843.0333786979593, "length": 169, "terminated": true}
+{"kind": "train", "step": 20000, "n_terminations": 40, "bc_weight": 0.485, "sps": 243.3574441267089, "critic_loss": 287.81014462280274, "q1": 288.6125610046387, "q2": 288.61308953857423, "actor_loss": -0.9191715731620789, "bc_loss": 0.026909677490592004, "q_term": 0.9322361634969711}
+{"kind": "eval", "step": 20000, "n_terminations": 40, "mean_return": 489.54449103756804, "std_return": 911.3913977343796, "returns": [569.4211128779733, 222.85682073443215, -457.29729727374524, 109.43942557739378, 88.76493949364082, 190.9772027137776, 400.41222343185314, 991.7870798301024, 13.56048540180877, 2447.333945213759, 124.75388569578038, 29.14913440862398, 15.627304383201887, 1483.4909976573604, 9.55966010353663, 15.607555952628713, 3376.451712104499, 117.13386516041612, 25.800190882671906, 16.059576401646808]}
+{"kind": "episode", "step": 20137, "n_terminations": 41, "episode": 51, "ret": 2990.618109793013, "length": 554, "terminated": true}
+{"kind": "episode", "step": 20628, "n_terminations": 42, "episode": 52, "ret": 2417.257540450273, "length": 491, "terminated": true}
+{"kind": "episode", "step": 20645, "n_terminations": 43, "episode": 53, "ret": 7.6914937115680555, "length": 17, "terminated": true}
+{"kind": "episode", "step": 20665, "n_terminations": 44, "episode": 54, "ret": 15.131568299605519, "length": 20, "terminated": true}
+{"kind": "episode", "step": 20686, "n_terminations": 45, "episode": 55, "ret": 17.059060551502327, "length": 21, "terminated": true}
+{"kind": "episode", "step": 20731, "n_terminations": 46, "episode": 56, "ret": 161.4091932885845, "length": 45, "terminated": true}
+{"kind": "episode", "step": 20795, "n_terminations": 47, "episode": 57, "ret": 87.01018908668556, "length": 64, "terminated": true}
+{"kind": "episode", "step": 20900, "n_terminations": 48, "episode": 58, "ret": 397.47723020039825, "length": 105, "terminated": true}
+{"kind": "train", "step": 21000, "n_terminations": 48, "bc_weight": 0.484, "sps": 217.37345146245607, "critic_loss": 303.3171597442627, "q1": 293.57553036499024, "q2": 293.57965530395506, "actor_loss": -0.9231655744314193, "bc_loss": 0.026898856222629546, "q_term": 0.9361980535984039}
+{"kind": "episode", "step": 21627, "n_terminations": 49, "episode": 59, "ret": 3315.011536597058, "length": 727, "terminated": true}
+{"kind": "episode", "step": 21649, "n_terminations": 50, "episode": 60, "ret": 13.961490703566831, "length": 22, "terminated": true}
+{"kind": "train", "step": 22000, "n_terminations": 50, "bc_weight": 0.483, "sps": 245.50625585844693, "critic_loss": 320.8418776702881, "q1": 297.1740262145996, "q2": 297.171038482666, "actor_loss": -0.9253716009855271, "bc_loss": 0.027119559410959483, "q_term": 0.9384838165044784}
+{"kind": "episode", "step": 22516, "n_terminations": 51, "episode": 61, "ret": 4306.9309060452115, "length": 867, "terminated": true}
+{"kind": "train", "step": 23000, "n_terminations": 51, "bc_weight": 0.482, "sps": 248.35266601533587, "critic_loss": 325.775669418335, "q1": 301.2232047729492, "q2": 301.2260861206055, "actor_loss": -0.9275241807699204, "bc_loss": 0.026836496587842703, "q_term": 0.9404727518558502}
+{"kind": "episode", "step": 23040, "n_terminations": 52, "episode": 62, "ret": 2466.3389712895355, "length": 524, "terminated": true}
+{"kind": "episode", "step": 23066, "n_terminations": 53, "episode": 63, "ret": 49.952913507550406, "length": 26, "terminated": true}
+{"kind": "episode", "step": 23376, "n_terminations": 54, "episode": 64, "ret": 1492.3714392933364, "length": 310, "terminated": true}
+{"kind": "train", "step": 24000, "n_terminations": 54, "bc_weight": 0.481, "sps": 249.77464444679075, "critic_loss": 347.81741400146484, "q1": 304.70260220336917, "q2": 304.70215460205077, "actor_loss": -0.929457710981369, "bc_loss": 0.026874322783201933, "q_term": 0.9423977173566819}
+{"kind": "episode", "step": 24022, "n_terminations": 55, "episode": 65, "ret": 3502.7746904700803, "length": 646, "terminated": true}
+{"kind": "episode", "step": 24192, "n_terminations": 56, "episode": 66, "ret": 694.891577822881, "length": 170, "terminated": true}
+{"kind": "episode", "step": 24221, "n_terminations": 57, "episode": 67, "ret": 29.664614696336656, "length": 29, "terminated": true}
+{"kind": "episode", "step": 24244, "n_terminations": 58, "episode": 68, "ret": 24.583700090418173, "length": 23, "terminated": true}
+{"kind": "episode", "step": 24318, "n_terminations": 59, "episode": 69, "ret": 270.09978726435156, "length": 74, "terminated": true}
+{"kind": "train", "step": 25000, "n_terminations": 59, "bc_weight": 0.48, "sps": 249.74263903580368, "critic_loss": 363.1309601135254, "q1": 308.8425597229004, "q2": 308.84527331542967, "actor_loss": -0.9329034824371338, "bc_loss": 0.02696476588398218, "q_term": 0.9458600174188614}
+{"kind": "episode", "step": 25318, "n_terminations": 59, "episode": 70, "ret": 5551.611824489487, "length": 1000, "terminated": false}
+{"kind": "train", "step": 26000, "n_terminations": 59, "bc_weight": 0.479, "sps": 247.82244908944259, "critic_loss": 358.4942195587158, "q1": 310.728857421875, "q2": 310.73071099853513, "actor_loss": -0.9298151350021362, "bc_loss": 0.026977665901184084, "q_term": 0.9427508987188339}
+{"kind": "episode", "step": 26318, "n_terminations": 59, "episode": 71, "ret": -1018.6258447431525, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 26880, "n_terminations": 60, "episode": 72, "ret": 2769.0124848191854, "length": 562, "terminated": true}
+{"kind": "train", "step": 27000, "n_terminations": 60, "bc_weight": 0.478, "sps": 243.9102882265175, "critic_loss": 357.39375929260257, "q1": 307.5282433166504, "q2": 307.52747973632813, "actor_loss": -0.920431485414505, "bc_loss": 0.027086949314922094, "q_term": 0.9333925106525421}
+{"kind": "episode", "step": 27873, "n_terminations": 61, "episode": 73, "ret": 5345.816036454125, "length": 993, "terminated": true}
+{"kind": "train", "step": 28000, "n_terminations": 61, "bc_weight": 0.477, "sps": 250.39318850942138, "critic_loss": 367.0265529022217, "q1": 310.4957917480469, "q2": 310.49750787353514, "actor_loss": -0.9210903960466384, "bc_loss": 0.027140584763139488, "q_term": 0.9340500007867814}
+{"kind": "episode", "step": 28594, "n_terminations": 62, "episode": 74, "ret": 3067.4059728938973, "length": 721, "terminated": true}
+{"kind": "episode", "step": 28789, "n_terminations": 63, "episode": 75, "ret": 620.290068158145, "length": 195, "terminated": true}
+{"kind": "episode", "step": 28801, "n_terminations": 64, "episode": 76, "ret": -2.992760680450931, "length": 12, "terminated": true}
+{"kind": "episode", "step": 28986, "n_terminations": 65, "episode": 77, "ret": 851.3550761702197, "length": 185, "terminated": true}
+{"kind": "train", "step": 29000, "n_terminations": 65, "bc_weight": 0.476, "sps": 250.32115953916792, "critic_loss": 365.2309444274902, "q1": 314.048752532959, "q2": 314.0528240356445, "actor_loss": -0.9244277050495148, "bc_loss": 0.026931870110332965, "q_term": 0.9372607221603394}
+{"kind": "episode", "step": 29238, "n_terminations": 66, "episode": 78, "ret": 1014.3874937930284, "length": 252, "terminated": true}
+{"kind": "episode", "step": 29607, "n_terminations": 67, "episode": 79, "ret": 1605.0259881059428, "length": 369, "terminated": true}
+{"kind": "episode", "step": 29680, "n_terminations": 68, "episode": 80, "ret": 118.38451920278074, "length": 73, "terminated": true}
+{"kind": "episode", "step": 29802, "n_terminations": 69, "episode": 81, "ret": 333.7599990557365, "length": 122, "terminated": true}
+{"kind": "episode", "step": 29833, "n_terminations": 70, "episode": 82, "ret": 49.288306583163276, "length": 31, "terminated": true}
+{"kind": "train", "step": 30000, "n_terminations": 70, "bc_weight": 0.475, "sps": 250.49836244235044, "critic_loss": 375.61277226257323, "q1": 316.60317376708986, "q2": 316.60263287353513, "actor_loss": -0.9252514539957046, "bc_loss": 0.027094299282878636, "q_term": 0.9381347324848175}
+{"kind": "episode", "step": 30787, "n_terminations": 71, "episode": 83, "ret": 5148.064372393048, "length": 954, "terminated": true}
+{"kind": "train", "step": 31000, "n_terminations": 71, "bc_weight": 0.474, "sps": 250.09128803300345, "critic_loss": 396.235666305542, "q1": 319.13982336425784, "q2": 319.1401463317871, "actor_loss": -0.9269854992628097, "bc_loss": 0.02719853452220559, "q_term": 0.9398911855220795}
+{"kind": "episode", "step": 31787, "n_terminations": 71, "episode": 84, "ret": 4962.384949531417, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 31961, "n_terminations": 72, "episode": 85, "ret": 805.4384390012287, "length": 174, "terminated": true}
+{"kind": "train", "step": 32000, "n_terminations": 72, "bc_weight": 0.473, "sps": 249.4066615056589, "critic_loss": 388.5599389801025, "q1": 322.5781824645996, "q2": 322.5786000366211, "actor_loss": -0.9301926963329316, "bc_loss": 0.027183771278709173, "q_term": 0.9430641502141952}
+{"kind": "episode", "step": 32004, "n_terminations": 73, "episode": 86, "ret": 164.291269103231, "length": 43, "terminated": true}
+{"kind": "train", "step": 33000, "n_terminations": 73, "bc_weight": 0.472, "sps": 250.91326346597373, "critic_loss": 399.8157599182129, "q1": 324.86339099121096, "q2": 324.8625446777344, "actor_loss": -0.9296409261226654, "bc_loss": 0.027113851502537728, "q_term": 0.942452210187912}
+{"kind": "episode", "step": 33004, "n_terminations": 73, "episode": 87, "ret": 5406.497145004801, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 33226, "n_terminations": 74, "episode": 88, "ret": 1023.1714411294573, "length": 222, "terminated": true}
+{"kind": "episode", "step": 33444, "n_terminations": 75, "episode": 89, "ret": 1021.2059678547189, "length": 218, "terminated": true}
+{"kind": "episode", "step": 33730, "n_terminations": 76, "episode": 90, "ret": 1311.158794939432, "length": 286, "terminated": true}
+{"kind": "train", "step": 34000, "n_terminations": 76, "bc_weight": 0.471, "sps": 250.79500859631167, "critic_loss": 401.8044050140381, "q1": 327.7389399108887, "q2": 327.742534576416, "actor_loss": -0.9319872387647629, "bc_loss": 0.02737834082171321, "q_term": 0.944896137714386}
+{"kind": "episode", "step": 34033, "n_terminations": 77, "episode": 91, "ret": 1410.2122078048726, "length": 303, "terminated": true}
+{"kind": "episode", "step": 34312, "n_terminations": 78, "episode": 92, "ret": 1154.2461394585487, "length": 279, "terminated": true}
+{"kind": "episode", "step": 34329, "n_terminations": 79, "episode": 93, "ret": 12.127559316455585, "length": 17, "terminated": true}
+{"kind": "episode", "step": 34637, "n_terminations": 80, "episode": 94, "ret": 1146.6835480939546, "length": 308, "terminated": true}
+{"kind": "episode", "step": 34869, "n_terminations": 81, "episode": 95, "ret": 1264.8080899943282, "length": 232, "terminated": true}
+{"kind": "train", "step": 35000, "n_terminations": 81, "bc_weight": 0.47, "sps": 250.83961488324394, "critic_loss": 406.6395393371582, "q1": 329.8107788391113, "q2": 329.8093659057617, "actor_loss": -0.9326902515888215, "bc_loss": 0.027145911809056997, "q_term": 0.9454623707532883}
+{"kind": "episode", "step": 35153, "n_terminations": 82, "episode": 96, "ret": 1369.9909752421443, "length": 284, "terminated": true}
+{"kind": "train", "step": 36000, "n_terminations": 82, "bc_weight": 0.469, "sps": 250.2145520774237, "critic_loss": 425.2850425720215, "q1": 332.77143502807616, "q2": 332.77080807495116, "actor_loss": -0.9346881364583969, "bc_loss": 0.026920179449021815, "q_term": 0.9473271230459214}
+{"kind": "episode", "step": 36153, "n_terminations": 82, "episode": 97, "ret": 4445.649382857314, "length": 1000, "terminated": false}
+{"kind": "train", "step": 37000, "n_terminations": 82, "bc_weight": 0.46799999999999997, "sps": 249.99462079655484, "critic_loss": 427.2476381530762, "q1": 333.04615502929687, "q2": 333.04506109619143, "actor_loss": -0.933417111992836, "bc_loss": 0.02727809604629874, "q_term": 0.9461968668699264}
+{"kind": "episode", "step": 37153, "n_terminations": 82, "episode": 98, "ret": 675.8578083882242, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 37285, "n_terminations": 83, "episode": 99, "ret": 489.3851167042957, "length": 132, "terminated": true}
+{"kind": "episode", "step": 37974, "n_terminations": 84, "episode": 100, "ret": 3213.973340758377, "length": 689, "terminated": true}
+{"kind": "train", "step": 38000, "n_terminations": 84, "bc_weight": 0.46699999999999997, "sps": 250.5356648465222, "critic_loss": 436.22259594726563, "q1": 331.6881593322754, "q2": 331.68911517333987, "actor_loss": -0.9290039277076722, "bc_loss": 0.02722957194224, "q_term": 0.9417337104082107}
+{"kind": "episode", "step": 38031, "n_terminations": 85, "episode": 101, "ret": 134.3199795912791, "length": 57, "terminated": true}
+{"kind": "episode", "step": 38568, "n_terminations": 86, "episode": 102, "ret": 2512.194265904241, "length": 537, "terminated": true}
+{"kind": "episode", "step": 38910, "n_terminations": 87, "episode": 103, "ret": 1542.6665143021223, "length": 342, "terminated": true}
+{"kind": "train", "step": 39000, "n_terminations": 87, "bc_weight": 0.46599999999999997, "sps": 251.0517792379305, "critic_loss": 421.3808506011963, "q1": 333.4411325378418, "q2": 333.43860595703126, "actor_loss": -0.9289801086187363, "bc_loss": 0.02720078681781888, "q_term": 0.9416692360639572}
+{"kind": "episode", "step": 39103, "n_terminations": 88, "episode": 104, "ret": 829.9913037569781, "length": 193, "terminated": true}
+{"kind": "episode", "step": 39243, "n_terminations": 89, "episode": 105, "ret": 537.7721170497323, "length": 140, "terminated": true}
+{"kind": "episode", "step": 39489, "n_terminations": 90, "episode": 106, "ret": 981.7294586513145, "length": 246, "terminated": true}
+{"kind": "train", "step": 40000, "n_terminations": 90, "bc_weight": 0.465, "sps": 260.2063248135897, "critic_loss": 422.70849934387206, "q1": 335.6339638977051, "q2": 335.6352391357422, "actor_loss": -0.9305624049901963, "bc_loss": 0.027080846529453993, "q_term": 0.9431684970855713}
+{"kind": "eval", "step": 40000, "n_terminations": 90, "mean_return": 1934.380886879703, "std_return": 1908.6704917106035, "returns": [1933.6819210210224, 4107.389158867528, -826.2678221451988, 1257.6650832749006, 4919.351414691939, 54.20308743591296, 55.9248588090929, 2630.385198907785, 3728.9373740368364, 2622.72755343273, 3789.332586736663, 791.2216134407292, 100.22571105177987, 5647.673130215336, 129.47732546495612, 4609.567324588366, 1478.793118750929, 1602.9822143813908, 20.443314821392853, 33.90356980996654]}
+{"kind": "episode", "step": 40200, "n_terminations": 91, "episode": 107, "ret": 3404.6557781403867, "length": 711, "terminated": true}
+{"kind": "train", "step": 41000, "n_terminations": 91, "bc_weight": 0.464, "sps": 187.1139910479984, "critic_loss": 448.24536798095704, "q1": 336.8446936340332, "q2": 336.84423281860353, "actor_loss": -0.930989557504654, "bc_loss": 0.02722573471814394, "q_term": 0.9436358704566955}
+{"kind": "episode", "step": 41200, "n_terminations": 91, "episode": 108, "ret": 4875.409165736253, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 41659, "n_terminations": 92, "episode": 109, "ret": 2262.548139687452, "length": 459, "terminated": true}
+{"kind": "train", "step": 42000, "n_terminations": 92, "bc_weight": 0.463, "sps": 245.63935365573474, "critic_loss": 435.85240815734863, "q1": 339.24998330688476, "q2": 339.248971862793, "actor_loss": -0.9330236294269562, "bc_loss": 0.027142098143696784, "q_term": 0.9456039792299271}
+{"kind": "episode", "step": 42659, "n_terminations": 92, "episode": 110, "ret": -484.04966767376527, "length": 1000, "terminated": false}
+{"kind": "train", "step": 43000, "n_terminations": 92, "bc_weight": 0.46199999999999997, "sps": 250.2757368516902, "critic_loss": 444.80019815063474, "q1": 336.7302780761719, "q2": 336.7325451965332, "actor_loss": -0.925560998916626, "bc_loss": 0.027048696629703044, "q_term": 0.9380710227489472}
+{"kind": "episode", "step": 43659, "n_terminations": 92, "episode": 111, "ret": 1120.010232881785, "length": 1000, "terminated": false}
+{"kind": "train", "step": 44000, "n_terminations": 92, "bc_weight": 0.46099999999999997, "sps": 250.5990580213669, "critic_loss": 441.0395518798828, "q1": 334.8689035949707, "q2": 334.8673927001953, "actor_loss": -0.9197082599401474, "bc_loss": 0.02712022254616022, "q_term": 0.9322241615056992}
+{"kind": "episode", "step": 44659, "n_terminations": 92, "episode": 112, "ret": 5145.062784458666, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 44697, "n_terminations": 93, "episode": 113, "ret": 60.50423748019272, "length": 38, "terminated": true}
+{"kind": "episode", "step": 44981, "n_terminations": 94, "episode": 114, "ret": 1394.6588117226022, "length": 284, "terminated": true}
+{"kind": "train", "step": 45000, "n_terminations": 94, "bc_weight": 0.45999999999999996, "sps": 248.97343003771965, "critic_loss": 437.6574141845703, "q1": 335.12337884521486, "q2": 335.1231999511719, "actor_loss": -0.91949491918087, "bc_loss": 0.027003457307815552, "q_term": 0.9319299393892289}
+{"kind": "episode", "step": 45370, "n_terminations": 95, "episode": 115, "ret": 1800.2292222164835, "length": 389, "terminated": true}
+{"kind": "episode", "step": 45721, "n_terminations": 96, "episode": 116, "ret": 2043.382401755876, "length": 351, "terminated": true}
+{"kind": "train", "step": 46000, "n_terminations": 96, "bc_weight": 0.459, "sps": 250.4707780787907, "critic_loss": 430.2665207061768, "q1": 337.2837520446777, "q2": 337.28621508789064, "actor_loss": -0.9202644227743149, "bc_loss": 0.027212878935039042, "q_term": 0.9327686960697175}
+{"kind": "episode", "step": 46520, "n_terminations": 97, "episode": 117, "ret": 3907.529753304668, "length": 799, "terminated": true}
+{"kind": "episode", "step": 46942, "n_terminations": 98, "episode": 118, "ret": 1750.030841834555, "length": 422, "terminated": true}
+{"kind": "train", "step": 47000, "n_terminations": 98, "bc_weight": 0.458, "sps": 250.68492569380274, "critic_loss": 443.66606578063966, "q1": 339.2989924621582, "q2": 339.2990647277832, "actor_loss": -0.9213874223232269, "bc_loss": 0.02713584153354168, "q_term": 0.9338291745185852}
+{"kind": "episode", "step": 47942, "n_terminations": 98, "episode": 119, "ret": 4266.585595182626, "length": 1000, "terminated": false}
+{"kind": "train", "step": 48000, "n_terminations": 98, "bc_weight": 0.457, "sps": 250.69366104202825, "critic_loss": 435.677039352417, "q1": 340.64392959594727, "q2": 340.6442969970703, "actor_loss": -0.9230119776725769, "bc_loss": 0.027068215794861315, "q_term": 0.9353956433534623}
+{"kind": "episode", "step": 48252, "n_terminations": 99, "episode": 120, "ret": 1132.842723547422, "length": 310, "terminated": true}
+{"kind": "train", "step": 49000, "n_terminations": 99, "bc_weight": 0.456, "sps": 240.49752429929782, "critic_loss": 448.96276864624025, "q1": 341.57567086791994, "q2": 341.57588415527346, "actor_loss": -0.9228601884841919, "bc_loss": 0.02697171586751938, "q_term": 0.9351727479696273}
+{"kind": "episode", "step": 49252, "n_terminations": 99, "episode": 121, "ret": 4345.491620138041, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 49833, "n_terminations": 100, "episode": 122, "ret": 2799.03290635935, "length": 581, "terminated": true}
+{"kind": "train", "step": 50000, "n_terminations": 100, "bc_weight": 0.455, "sps": 234.94500422355017, "critic_loss": 435.40365771484375, "q1": 342.7886955871582, "q2": 342.79044186401364, "actor_loss": -0.9242177064418793, "bc_loss": 0.026979701463133096, "q_term": 0.9365069473981857}
+{"kind": "episode", "step": 50075, "n_terminations": 101, "episode": 123, "ret": 1341.676726075952, "length": 242, "terminated": true}
+{"kind": "train", "step": 51000, "n_terminations": 101, "bc_weight": 0.454, "sps": 240.33909996493733, "critic_loss": 438.7086516876221, "q1": 344.2326996765137, "q2": 344.2340182800293, "actor_loss": -0.925745224237442, "bc_loss": 0.027070899963378907, "q_term": 0.9380488976240158}
+{"kind": "episode", "step": 51075, "n_terminations": 101, "episode": 124, "ret": 4990.049986294218, "length": 1000, "terminated": false}
+{"kind": "train", "step": 52000, "n_terminations": 101, "bc_weight": 0.453, "sps": 241.35327109816467, "critic_loss": 443.31508502197266, "q1": 345.81603967285156, "q2": 345.8149196166992, "actor_loss": -0.9270953451395034, "bc_loss": 0.02703786847367883, "q_term": 0.9393569637537003}
+{"kind": "episode", "step": 52075, "n_terminations": 101, "episode": 125, "ret": 5285.644134367677, "length": 1000, "terminated": false}
+{"kind": "train", "step": 53000, "n_terminations": 101, "bc_weight": 0.452, "sps": 239.74589006212707, "critic_loss": 437.72878717041016, "q1": 347.2431134643555, "q2": 347.2441734924316, "actor_loss": -0.9278083304166794, "bc_loss": 0.026854872308671476, "q_term": 0.9399601672887802}
+{"kind": "episode", "step": 53075, "n_terminations": 101, "episode": 126, "ret": 5019.226791580308, "length": 1000, "terminated": false}
+{"kind": "train", "step": 54000, "n_terminations": 101, "bc_weight": 0.451, "sps": 238.90021820136212, "critic_loss": 436.0331025085449, "q1": 349.0773034667969, "q2": 349.07916888427735, "actor_loss": -0.9297019920349121, "bc_loss": 0.026946246057748795, "q_term": 0.9418681787252426}
+{"kind": "episode", "step": 54075, "n_terminations": 101, "episode": 127, "ret": 5108.161839258044, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 54092, "n_terminations": 102, "episode": 128, "ret": 10.447960755166037, "length": 17, "terminated": true}
+{"kind": "episode", "step": 54165, "n_terminations": 103, "episode": 129, "ret": 85.27500481937605, "length": 73, "terminated": true}
+{"kind": "episode", "step": 54487, "n_terminations": 104, "episode": 130, "ret": 1324.6973646447486, "length": 322, "terminated": true}
+{"kind": "train", "step": 55000, "n_terminations": 104, "bc_weight": 0.45, "sps": 240.48225984191473, "critic_loss": 440.20811152648923, "q1": 349.6376067199707, "q2": 349.6373562011719, "actor_loss": -0.9302190252542496, "bc_loss": 0.02679651206731796, "q_term": 0.9422908287048339}
+{"kind": "episode", "step": 55487, "n_terminations": 104, "episode": 131, "ret": 4721.818285003735, "length": 1000, "terminated": false}
+{"kind": "train", "step": 56000, "n_terminations": 104, "bc_weight": 0.449, "sps": 237.0780624405016, "critic_loss": 440.6584807281494, "q1": 350.1224668579102, "q2": 350.12337884521486, "actor_loss": -0.9299285844564438, "bc_loss": 0.026895822174847126, "q_term": 0.9420182250738144}
+{"kind": "episode", "step": 56237, "n_terminations": 105, "episode": 132, "ret": 3348.1744582883375, "length": 750, "terminated": true}
+{"kind": "train", "step": 57000, "n_terminations": 105, "bc_weight": 0.448, "sps": 238.03895542410825, "critic_loss": 422.8330198516846, "q1": 350.01959155273437, "q2": 350.0213704223633, "actor_loss": -0.928477047920227, "bc_loss": 0.02669795551151037, "q_term": 0.9404510751962661}
+{"kind": "episode", "step": 57237, "n_terminations": 105, "episode": 133, "ret": -615.7940089135911, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 57745, "n_terminations": 106, "episode": 134, "ret": 2719.1633575395394, "length": 508, "terminated": true}
+{"kind": "train", "step": 58000, "n_terminations": 106, "bc_weight": 0.447, "sps": 241.31215509505134, "critic_loss": 439.34974479675293, "q1": 347.13481427001955, "q2": 347.13688787841795, "actor_loss": -0.9230425093173981, "bc_loss": 0.026663037914782764, "q_term": 0.9349741437435151}
+{"kind": "episode", "step": 58745, "n_terminations": 106, "episode": 135, "ret": 4981.355746740933, "length": 1000, "terminated": false}
+{"kind": "train", "step": 59000, "n_terminations": 106, "bc_weight": 0.446, "sps": 241.2366386933353, "critic_loss": 431.3375873260498, "q1": 348.42488650512695, "q2": 348.4245016784668, "actor_loss": -0.9236567612886429, "bc_loss": 0.026757098115980624, "q_term": 0.935603796005249}
+{"kind": "episode", "step": 59745, "n_terminations": 106, "episode": 136, "ret": 4599.233044347831, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 59944, "n_terminations": 107, "episode": 137, "ret": 851.8784095078507, "length": 199, "terminated": true}
+{"kind": "train", "step": 60000, "n_terminations": 107, "bc_weight": 0.445, "sps": 249.79017419070783, "critic_loss": 417.48515380859374, "q1": 348.42647131347655, "q2": 348.43045709228517, "actor_loss": -0.9237791765928268, "bc_loss": 0.026734434954822063, "q_term": 0.9356893563270569}
+{"kind": "eval", "step": 60000, "n_terminations": 107, "mean_return": 2006.2867205598784, "std_return": 1865.2443171796265, "returns": [1370.5160727945765, 5553.032261081053, 95.28312744235788, 4456.80024539577, 4014.544202790841, 132.00161050226626, 460.178439280927, 2449.7739887379366, 3843.7421762888434, -8.502399752422903, 3312.902768254394, 2209.9914420079344, 5366.604669310849, 85.89387292658924, 214.43038726052643, 1080.1090867720377, 2638.233176139346, 115.07083260245057, -8.01711950204079, 2743.145570863332]}
+{"kind": "episode", "step": 60172, "n_terminations": 108, "episode": 138, "ret": 918.9814341498006, "length": 228, "terminated": true}
+{"kind": "episode", "step": 60750, "n_terminations": 109, "episode": 139, "ret": 2340.3608409391295, "length": 578, "terminated": true}
+{"kind": "train", "step": 61000, "n_terminations": 109, "bc_weight": 0.444, "sps": 187.92378356620333, "critic_loss": 417.09311666870116, "q1": 349.75659820556643, "q2": 349.7583812561035, "actor_loss": -0.9257026709318161, "bc_loss": 0.026492510005831717, "q_term": 0.9374785529375076}
+{"kind": "episode", "step": 61750, "n_terminations": 109, "episode": 140, "ret": 4637.642973694957, "length": 1000, "terminated": false}
+{"kind": "train", "step": 62000, "n_terminations": 109, "bc_weight": 0.443, "sps": 246.07153040235704, "critic_loss": 421.3622078857422, "q1": 350.0823699035644, "q2": 350.08400088500974, "actor_loss": -0.926791401386261, "bc_loss": 0.02667096133157611, "q_term": 0.9386199592351914}
+{"kind": "episode", "step": 62280, "n_terminations": 110, "episode": 141, "ret": 2481.842532293351, "length": 530, "terminated": true}
+{"kind": "episode", "step": 62404, "n_terminations": 111, "episode": 142, "ret": 532.6834388030179, "length": 124, "terminated": true}
+{"kind": "episode", "step": 62880, "n_terminations": 112, "episode": 143, "ret": 1946.3290242749904, "length": 476, "terminated": true}
+{"kind": "train", "step": 63000, "n_terminations": 112, "bc_weight": 0.442, "sps": 236.48292718708723, "critic_loss": 420.9405823059082, "q1": 350.57342486572264, "q2": 350.5718256530762, "actor_loss": -0.9266322804689407, "bc_loss": 0.026576963406056166, "q_term": 0.9383925995826721}
+{"kind": "episode", "step": 63786, "n_terminations": 113, "episode": 144, "ret": 4372.21161198918, "length": 906, "terminated": true}
+{"kind": "train", "step": 64000, "n_terminations": 113, "bc_weight": 0.441, "sps": 230.46454526442872, "critic_loss": 414.3087848052979, "q1": 351.7124016113281, "q2": 351.71620718383787, "actor_loss": -0.9276966614723205, "bc_loss": 0.026526600297540427, "q_term": 0.9394081338644028}
+{"kind": "episode", "step": 64391, "n_terminations": 114, "episode": 145, "ret": 2956.0841744558397, "length": 605, "terminated": true}
+{"kind": "episode", "step": 64682, "n_terminations": 115, "episode": 146, "ret": 1363.6471375018982, "length": 291, "terminated": true}
+{"kind": "train", "step": 65000, "n_terminations": 115, "bc_weight": 0.44, "sps": 237.6419289188246, "critic_loss": 421.10655416870117, "q1": 352.2719602661133, "q2": 352.27428088378906, "actor_loss": -0.9283282729387283, "bc_loss": 0.02654640832170844, "q_term": 0.9400219399929046}
+{"kind": "episode", "step": 65682, "n_terminations": 115, "episode": 147, "ret": 4113.065834421726, "length": 1000, "terminated": false}
+{"kind": "train", "step": 66000, "n_terminations": 115, "bc_weight": 0.439, "sps": 240.66463610317257, "critic_loss": 423.786036819458, "q1": 352.00859844970705, "q2": 352.012108001709, "actor_loss": -0.9284120283126831, "bc_loss": 0.02658901844546199, "q_term": 0.9400979101657867}
+{"kind": "episode", "step": 66080, "n_terminations": 116, "episode": 148, "ret": 1901.5551702393427, "length": 398, "terminated": true}
+{"kind": "episode", "step": 66109, "n_terminations": 117, "episode": 149, "ret": 55.27137753634301, "length": 29, "terminated": true}
+{"kind": "episode", "step": 66268, "n_terminations": 118, "episode": 150, "ret": 673.1681281489183, "length": 159, "terminated": true}
+{"kind": "train", "step": 67000, "n_terminations": 118, "bc_weight": 0.438, "sps": 240.78996347192813, "critic_loss": 431.8622905426025, "q1": 352.30824542236326, "q2": 352.3082078552246, "actor_loss": -0.9284485023021698, "bc_loss": 0.02636963190883398, "q_term": 0.9400115542411804}
+{"kind": "episode", "step": 67268, "n_terminations": 118, "episode": 151, "ret": 5032.879305282384, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 67312, "n_terminations": 119, "episode": 152, "ret": 148.856933716831, "length": 44, "terminated": true}
+{"kind": "episode", "step": 67524, "n_terminations": 120, "episode": 153, "ret": 991.7137266218394, "length": 212, "terminated": true}
+{"kind": "episode", "step": 67918, "n_terminations": 121, "episode": 154, "ret": 1647.4796492026226, "length": 394, "terminated": true}
+{"kind": "train", "step": 68000, "n_terminations": 121, "bc_weight": 0.437, "sps": 243.41645106662534, "critic_loss": 431.6598677368164, "q1": 352.6520239868164, "q2": 352.65510693359374, "actor_loss": -0.9293896516561508, "bc_loss": 0.026382922176271677, "q_term": 0.9409321267604828}
+{"kind": "episode", "step": 68171, "n_terminations": 122, "episode": 155, "ret": 1262.8440170269828, "length": 253, "terminated": true}
+{"kind": "train", "step": 69000, "n_terminations": 122, "bc_weight": 0.436, "sps": 246.42214400162436, "critic_loss": 426.7096472015381, "q1": 352.5077247619629, "q2": 352.5101936950684, "actor_loss": -0.9276433786153794, "bc_loss": 0.02639729082584381, "q_term": 0.9391658006906509}
+{"kind": "episode", "step": 69171, "n_terminations": 122, "episode": 156, "ret": 45.980209430885054, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 69445, "n_terminations": 123, "episode": 157, "ret": 1245.5767573621886, "length": 274, "terminated": true}
+{"kind": "train", "step": 70000, "n_terminations": 123, "bc_weight": 0.435, "sps": 246.5120978181264, "critic_loss": 410.87617280578615, "q1": 349.5814568786621, "q2": 349.5828212585449, "actor_loss": -0.9236614129543305, "bc_loss": 0.026458401478827, "q_term": 0.9351840243339539}
+{"kind": "episode", "step": 70129, "n_terminations": 124, "episode": 158, "ret": 3299.9988339710976, "length": 684, "terminated": true}
+{"kind": "episode", "step": 70325, "n_terminations": 125, "episode": 159, "ret": 825.2907507797252, "length": 196, "terminated": true}
+{"kind": "episode", "step": 70457, "n_terminations": 126, "episode": 160, "ret": 551.7422262493109, "length": 132, "terminated": true}
+{"kind": "episode", "step": 70652, "n_terminations": 127, "episode": 161, "ret": 789.3941746717431, "length": 195, "terminated": true}
+{"kind": "episode", "step": 70681, "n_terminations": 128, "episode": 162, "ret": 58.200963487585994, "length": 29, "terminated": true}
+{"kind": "train", "step": 71000, "n_terminations": 128, "bc_weight": 0.434, "sps": 238.59538146042328, "critic_loss": 420.56136437988283, "q1": 350.6645818786621, "q2": 350.6690725708008, "actor_loss": -0.924107246875763, "bc_loss": 0.026429647117853165, "q_term": 0.9355909003019333}
+{"kind": "episode", "step": 71006, "n_terminations": 129, "episode": 163, "ret": 1347.347115368587, "length": 325, "terminated": true}
+{"kind": "train", "step": 72000, "n_terminations": 129, "bc_weight": 0.433, "sps": 241.90851872108763, "critic_loss": 428.87951501464846, "q1": 350.4831339416504, "q2": 350.48766403198243, "actor_loss": -0.925508951663971, "bc_loss": 0.026510006554424762, "q_term": 0.937001044511795}
+{"kind": "episode", "step": 72006, "n_terminations": 129, "episode": 164, "ret": 5691.686536524174, "length": 1000, "terminated": false}
+{"kind": "train", "step": 73000, "n_terminations": 129, "bc_weight": 0.432, "sps": 244.84911347577764, "critic_loss": 411.4906594848633, "q1": 351.11129397583005, "q2": 351.1097895507813, "actor_loss": -0.92471952855587, "bc_loss": 0.026418191891163588, "q_term": 0.9361453759670257}
+{"kind": "episode", "step": 73006, "n_terminations": 129, "episode": 165, "ret": 5167.450966335907, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 73390, "n_terminations": 130, "episode": 166, "ret": 1769.8318507935426, "length": 384, "terminated": true}
+{"kind": "train", "step": 74000, "n_terminations": 130, "bc_weight": 0.431, "sps": 249.3142127035822, "critic_loss": 411.15109382629396, "q1": 351.75574160766604, "q2": 351.7583903808594, "actor_loss": -0.9266418673992157, "bc_loss": 0.02624463650584221, "q_term": 0.9379663935899735}
+{"kind": "episode", "step": 74107, "n_terminations": 131, "episode": 167, "ret": 3655.864145962023, "length": 717, "terminated": true}
+{"kind": "episode", "step": 74804, "n_terminations": 132, "episode": 168, "ret": 3777.0837830928945, "length": 697, "terminated": true}
+{"kind": "train", "step": 75000, "n_terminations": 132, "bc_weight": 0.43, "sps": 250.27630434686617, "critic_loss": 421.3315160064697, "q1": 351.8579750366211, "q2": 351.8623916931152, "actor_loss": -0.9271657632589341, "bc_loss": 0.02640088599547744, "q_term": 0.9385313322544098}
+{"kind": "episode", "step": 75135, "n_terminations": 133, "episode": 169, "ret": 1523.8829215251571, "length": 331, "terminated": true}
+{"kind": "train", "step": 76000, "n_terminations": 133, "bc_weight": 0.429, "sps": 251.25153913360444, "critic_loss": 417.81584875488284, "q1": 351.89524377441404, "q2": 351.8974602355957, "actor_loss": -0.9276789071559906, "bc_loss": 0.02641329166293144, "q_term": 0.9390233575105668}
+{"kind": "episode", "step": 76135, "n_terminations": 133, "episode": 170, "ret": 5324.817967598662, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 76374, "n_terminations": 134, "episode": 171, "ret": 1108.6141683087806, "length": 239, "terminated": true}
+{"kind": "episode", "step": 76896, "n_terminations": 135, "episode": 172, "ret": 2607.3361080098102, "length": 522, "terminated": true}
+{"kind": "train", "step": 77000, "n_terminations": 135, "bc_weight": 0.428, "sps": 251.60011534135384, "critic_loss": 423.404427154541, "q1": 351.8529320678711, "q2": 351.85790579223635, "actor_loss": -0.9284323234558105, "bc_loss": 0.02615523036196828, "q_term": 0.9396398105621337}
+{"kind": "episode", "step": 77118, "n_terminations": 136, "episode": 173, "ret": 1165.7490720365981, "length": 222, "terminated": true}
+{"kind": "episode", "step": 77330, "n_terminations": 137, "episode": 174, "ret": 1059.5548039471194, "length": 212, "terminated": true}
+{"kind": "episode", "step": 77398, "n_terminations": 138, "episode": 175, "ret": 192.99181311803193, "length": 68, "terminated": true}
+{"kind": "episode", "step": 77573, "n_terminations": 139, "episode": 176, "ret": 758.991448143089, "length": 175, "terminated": true}
+{"kind": "episode", "step": 77687, "n_terminations": 140, "episode": 177, "ret": 453.05767628625034, "length": 114, "terminated": true}
+{"kind": "train", "step": 78000, "n_terminations": 140, "bc_weight": 0.427, "sps": 252.07261208410057, "critic_loss": 425.19351556396487, "q1": 352.47822439575197, "q2": 352.47878298950195, "actor_loss": -0.9283882327079773, "bc_loss": 0.026232660349458457, "q_term": 0.9396026463508605}
+{"kind": "episode", "step": 78312, "n_terminations": 141, "episode": 178, "ret": 3299.5887892269875, "length": 625, "terminated": true}
+{"kind": "train", "step": 79000, "n_terminations": 141, "bc_weight": 0.426, "sps": 250.81276521721867, "critic_loss": 411.2335880889893, "q1": 352.3023336791992, "q2": 352.30618090820315, "actor_loss": -0.9272120207548141, "bc_loss": 0.026268520977348088, "q_term": 0.9384155708551407}
+{"kind": "episode", "step": 79036, "n_terminations": 142, "episode": 179, "ret": 3827.7106367422507, "length": 724, "terminated": true}
+{"kind": "episode", "step": 79232, "n_terminations": 143, "episode": 180, "ret": 723.8330619052459, "length": 196, "terminated": true}
+{"kind": "episode", "step": 79371, "n_terminations": 144, "episode": 181, "ret": 592.8795375758853, "length": 139, "terminated": true}
+{"kind": "train", "step": 80000, "n_terminations": 144, "bc_weight": 0.425, "sps": 260.52398047565845, "critic_loss": 428.9718081817627, "q1": 352.6705702819824, "q2": 352.67169232177736, "actor_loss": -0.929850481748581, "bc_loss": 0.026121935937553645, "q_term": 0.940965332865715}
+{"kind": "eval", "step": 80000, "n_terminations": 144, "mean_return": 2435.7729663737346, "std_return": 2150.0185600556338, "returns": [2302.702942059722, 5858.293100245116, 4058.79424761226, 5703.110969988114, 4807.134980365401, 940.5835686521989, 3355.00008863101, 3188.018241328385, 1975.8215420987037, 373.45357231041555, 1507.9145558265143, 14.313040364481557, 233.6249879312276, 5639.22759458345, 482.0851655549269, 5479.554728284601, 209.849604960153, -685.2366455361941, 456.0742042918582, 2815.138837922351]}
+{"kind": "episode", "step": 80162, "n_terminations": 145, "episode": 182, "ret": 4243.886751039578, "length": 791, "terminated": true}
+{"kind": "episode", "step": 80281, "n_terminations": 146, "episode": 183, "ret": 409.95897229517306, "length": 119, "terminated": true}
+{"kind": "train", "step": 81000, "n_terminations": 146, "bc_weight": 0.424, "sps": 176.24590076242887, "critic_loss": 420.3600353088379, "q1": 352.498123840332, "q2": 352.49769845581056, "actor_loss": -0.9303926789760589, "bc_loss": 0.026227303471416236, "q_term": 0.9415261042118073}
+{"kind": "episode", "step": 81281, "n_terminations": 146, "episode": 184, "ret": 5274.692221270031, "length": 1000, "terminated": false}
+{"kind": "train", "step": 82000, "n_terminations": 146, "bc_weight": 0.423, "sps": 259.43534902380765, "critic_loss": 424.3684397277832, "q1": 352.91749200439455, "q2": 352.91855661010743, "actor_loss": -0.9306706557273865, "bc_loss": 0.026163697812706232, "q_term": 0.94175099670887}
+{"kind": "episode", "step": 82281, "n_terminations": 146, "episode": 185, "ret": 1269.6401710064156, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 82718, "n_terminations": 147, "episode": 186, "ret": 2317.7541595036255, "length": 437, "terminated": true}
+{"kind": "train", "step": 83000, "n_terminations": 147, "bc_weight": 0.422, "sps": 250.30568320412453, "critic_loss": 411.91929777526855, "q1": 351.28021365356443, "q2": 351.2799009094238, "actor_loss": -0.9283681322336197, "bc_loss": 0.02611503839120269, "q_term": 0.939401726603508}
+{"kind": "episode", "step": 83584, "n_terminations": 148, "episode": 187, "ret": 4427.299947993831, "length": 866, "terminated": true}
+{"kind": "train", "step": 84000, "n_terminations": 148, "bc_weight": 0.421, "sps": 250.66363676893727, "critic_loss": 406.839761428833, "q1": 350.95641543579103, "q2": 350.9597753601074, "actor_loss": -0.9275572844743729, "bc_loss": 0.026077240884304048, "q_term": 0.9385487835407257}
+{"kind": "episode", "step": 84095, "n_terminations": 149, "episode": 188, "ret": 2667.1216818875228, "length": 511, "terminated": true}
+{"kind": "episode", "step": 84195, "n_terminations": 150, "episode": 189, "ret": 430.1344844592284, "length": 100, "terminated": true}
+{"kind": "episode", "step": 84583, "n_terminations": 151, "episode": 190, "ret": 1936.6751949188747, "length": 388, "terminated": true}
+{"kind": "train", "step": 85000, "n_terminations": 151, "bc_weight": 0.42, "sps": 246.6403857472418, "critic_loss": 417.8730495758057, "q1": 351.2390626220703, "q2": 351.2415321350098, "actor_loss": -0.9284980577230454, "bc_loss": 0.026136778701096774, "q_term": 0.939488587141037}
+{"kind": "episode", "step": 85513, "n_terminations": 152, "episode": 191, "ret": 4094.178392850079, "length": 930, "terminated": true}
+{"kind": "episode", "step": 85946, "n_terminations": 153, "episode": 192, "ret": 642.6064921038496, "length": 433, "terminated": true}
+{"kind": "train", "step": 86000, "n_terminations": 153, "bc_weight": 0.419, "sps": 250.89487728217634, "critic_loss": 396.56245729064943, "q1": 350.6209919433594, "q2": 350.62059555053713, "actor_loss": -0.9271940063238144, "bc_loss": 0.026127379287034274, "q_term": 0.9381544517278672}
+{"kind": "episode", "step": 86090, "n_terminations": 154, "episode": 193, "ret": 502.4131331318498, "length": 144, "terminated": true}
+{"kind": "episode", "step": 86115, "n_terminations": 155, "episode": 194, "ret": 12.614009970112132, "length": 25, "terminated": true}
+{"kind": "episode", "step": 86244, "n_terminations": 156, "episode": 195, "ret": 199.44748779640793, "length": 129, "terminated": true}
+{"kind": "train", "step": 87000, "n_terminations": 156, "bc_weight": 0.418, "sps": 251.01384228436442, "critic_loss": 410.9129853820801, "q1": 350.4365220336914, "q2": 350.4383187561035, "actor_loss": -0.9278299151659012, "bc_loss": 0.026138715367764236, "q_term": 0.9387689164876938}
+{"kind": "episode", "step": 87244, "n_terminations": 156, "episode": 196, "ret": 3536.6873394445092, "length": 1000, "terminated": false}
+{"kind": "train", "step": 88000, "n_terminations": 156, "bc_weight": 0.417, "sps": 248.18891144623586, "critic_loss": 406.61508192443847, "q1": 349.84603985595703, "q2": 349.8470038757324, "actor_loss": -0.928047765135765, "bc_loss": 0.026197120413184165, "q_term": 0.9389850370883942}
+{"kind": "episode", "step": 88244, "n_terminations": 156, "episode": 197, "ret": 5138.095905439319, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 88726, "n_terminations": 157, "episode": 198, "ret": 2232.277462049241, "length": 482, "terminated": true}
+{"kind": "train", "step": 89000, "n_terminations": 157, "bc_weight": 0.416, "sps": 250.38771763542, "critic_loss": 403.65847901916504, "q1": 350.1328066101074, "q2": 350.1342173461914, "actor_loss": -0.9275908269882203, "bc_loss": 0.02613541927933693, "q_term": 0.938476231098175}
+{"kind": "episode", "step": 89406, "n_terminations": 158, "episode": 199, "ret": 3546.1879439025524, "length": 680, "terminated": true}
+{"kind": "train", "step": 90000, "n_terminations": 158, "bc_weight": 0.415, "sps": 250.0858899890254, "critic_loss": 411.9562997741699, "q1": 349.6887134094238, "q2": 349.68999496459963, "actor_loss": -0.9279323766231536, "bc_loss": 0.026111929420381784, "q_term": 0.9387818429470062}
+{"kind": "episode", "step": 90051, "n_terminations": 159, "episode": 200, "ret": 2878.6377416880173, "length": 645, "terminated": true}
+{"kind": "episode", "step": 90614, "n_terminations": 160, "episode": 201, "ret": 2602.7651690521375, "length": 563, "terminated": true}
+{"kind": "train", "step": 91000, "n_terminations": 160, "bc_weight": 0.414, "sps": 249.8007069550399, "critic_loss": 407.1797028808594, "q1": 350.25230798339845, "q2": 350.24796380615237, "actor_loss": -0.9285456171035766, "bc_loss": 0.026265468917787076, "q_term": 0.9394326537847519}
+{"kind": "episode", "step": 91614, "n_terminations": 160, "episode": 202, "ret": 5245.159412938189, "length": 1000, "terminated": false}
+{"kind": "train", "step": 92000, "n_terminations": 160, "bc_weight": 0.413, "sps": 244.6587441633082, "critic_loss": 403.7394550933838, "q1": 350.5456949157715, "q2": 350.548973236084, "actor_loss": -0.9293113684654236, "bc_loss": 0.0262795215472579, "q_term": 0.9401779032945633}
+{"kind": "episode", "step": 92132, "n_terminations": 161, "episode": 203, "ret": 2629.445311571947, "length": 518, "terminated": true}
+{"kind": "episode", "step": 92365, "n_terminations": 162, "episode": 204, "ret": 1158.9200071300697, "length": 233, "terminated": true}
+{"kind": "episode", "step": 92713, "n_terminations": 163, "episode": 205, "ret": 1619.1885680691926, "length": 348, "terminated": true}
+{"kind": "train", "step": 93000, "n_terminations": 163, "bc_weight": 0.412, "sps": 246.36142501707636, "critic_loss": 397.83492205810546, "q1": 350.93577709960937, "q2": 350.9376741638184, "actor_loss": -0.9317099984884262, "bc_loss": 0.02613697212189436, "q_term": 0.9424914873838425}
+{"kind": "episode", "step": 93183, "n_terminations": 164, "episode": 206, "ret": 2415.1103290439605, "length": 470, "terminated": true}
+{"kind": "episode", "step": 93833, "n_terminations": 165, "episode": 207, "ret": 3561.97704961544, "length": 650, "terminated": true}
+{"kind": "episode", "step": 93925, "n_terminations": 166, "episode": 208, "ret": 372.27062540682573, "length": 92, "terminated": true}
+{"kind": "episode", "step": 93945, "n_terminations": 167, "episode": 209, "ret": 8.9727845142978, "length": 20, "terminated": true}
+{"kind": "train", "step": 94000, "n_terminations": 167, "bc_weight": 0.411, "sps": 248.58561245241862, "critic_loss": 404.05335270690915, "q1": 351.2346184387207, "q2": 351.2357108154297, "actor_loss": -0.9314898920059204, "bc_loss": 0.026224242623895406, "q_term": 0.9422811673879623}
+{"kind": "episode", "step": 94945, "n_terminations": 167, "episode": 210, "ret": -1016.7861680942574, "length": 1000, "terminated": false}
+{"kind": "train", "step": 95000, "n_terminations": 167, "bc_weight": 0.41, "sps": 243.24680912488705, "critic_loss": 419.53374008178713, "q1": 348.8790188293457, "q2": 348.8818740539551, "actor_loss": -0.9270541027784348, "bc_loss": 0.026185114815831183, "q_term": 0.9378030487298965}
+{"kind": "episode", "step": 95945, "n_terminations": 167, "episode": 211, "ret": 5254.120262014663, "length": 1000, "terminated": false}
+{"kind": "train", "step": 96000, "n_terminations": 167, "bc_weight": 0.409, "sps": 238.0431974523392, "critic_loss": 409.9586217498779, "q1": 348.2930367126465, "q2": 348.29318569946287, "actor_loss": -0.9259641572237015, "bc_loss": 0.02607130990922451, "q_term": 0.9366403580904007}
+{"kind": "episode", "step": 96127, "n_terminations": 168, "episode": 212, "ret": 817.2893749245659, "length": 182, "terminated": true}
+{"kind": "episode", "step": 96220, "n_terminations": 169, "episode": 213, "ret": 353.1118017153319, "length": 93, "terminated": true}
+{"kind": "episode", "step": 96350, "n_terminations": 170, "episode": 214, "ret": 660.8504394360251, "length": 130, "terminated": true}
+{"kind": "episode", "step": 96411, "n_terminations": 171, "episode": 215, "ret": 144.38350354622898, "length": 61, "terminated": true}
+{"kind": "train", "step": 97000, "n_terminations": 171, "bc_weight": 0.408, "sps": 241.2929418818404, "critic_loss": 411.7180248718262, "q1": 348.39849728393557, "q2": 348.40137005615236, "actor_loss": -0.9257808004617691, "bc_loss": 0.026234277069568632, "q_term": 0.9364974958896637}
+{"kind": "episode", "step": 97334, "n_terminations": 172, "episode": 216, "ret": 4643.06358570263, "length": 923, "terminated": true}
+{"kind": "train", "step": 98000, "n_terminations": 172, "bc_weight": 0.407, "sps": 250.60426861539884, "critic_loss": 390.4343056793213, "q1": 348.4832781982422, "q2": 348.4857929077148, "actor_loss": -0.9270632613897324, "bc_loss": 0.026103530511260034, "q_term": 0.9377004342079163}
+{"kind": "episode", "step": 98334, "n_terminations": 172, "episode": 217, "ret": 5218.3727055782, "length": 1000, "terminated": false}
+{"kind": "train", "step": 99000, "n_terminations": 172, "bc_weight": 0.406, "sps": 249.52246741153897, "critic_loss": 385.15195150756836, "q1": 348.20286465454103, "q2": 348.2054148864746, "actor_loss": -0.9258240365982056, "bc_loss": 0.026390084814280273, "q_term": 0.9365515446662903}
+{"kind": "episode", "step": 99334, "n_terminations": 172, "episode": 218, "ret": 194.41869753561002, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 99535, "n_terminations": 173, "episode": 219, "ret": 975.0913515490671, "length": 201, "terminated": true}
+{"kind": "episode", "step": 99848, "n_terminations": 174, "episode": 220, "ret": 1703.976567173353, "length": 313, "terminated": true}
+{"kind": "train", "step": 100000, "n_terminations": 174, "bc_weight": 0.405, "sps": 257.0543401312966, "critic_loss": 399.83620750427247, "q1": 346.1941443481445, "q2": 346.1968653869629, "actor_loss": -0.9232024544477463, "bc_loss": 0.026261164106428623, "q_term": 0.9338513222932816}
+{"kind": "eval", "step": 100000, "n_terminations": 174, "mean_return": 2462.248645181917, "std_return": 2309.7581057364814, "returns": [5786.298578182959, 1089.6961925603832, 152.64376186424747, 5005.043948082275, 1754.5071513366274, 5079.320533576017, 5820.318466184566, 429.11798795776417, 113.94389301226806, 19.19290802723053, 57.31279889481197, 51.45859781350542, 1853.367762994352, 5173.986198956948, 1044.6529075115318, 1079.1805367407987, 4236.95146861245, 4882.543694309887, 47.76725496635888, 5567.668262053348]}
+{"kind": "episode", "step": 100317, "n_terminations": 175, "episode": 221, "ret": 2362.973817112083, "length": 469, "terminated": true}
+{"kind": "episode", "step": 100789, "n_terminations": 176, "episode": 222, "ret": 2220.981857272552, "length": 472, "terminated": true}
+{"kind": "train", "step": 101000, "n_terminations": 176, "bc_weight": 0.404, "sps": 178.5979991660921, "critic_loss": 384.50432261657716, "q1": 346.61287664794924, "q2": 346.6157703552246, "actor_loss": -0.9220205031633377, "bc_loss": 0.026183445177972317, "q_term": 0.9326116745471954}
+{"kind": "episode", "step": 101789, "n_terminations": 176, "episode": 223, "ret": 5494.564644748891, "length": 1000, "terminated": false}
+{"kind": "train", "step": 102000, "n_terminations": 176, "bc_weight": 0.403, "sps": 252.75898008236067, "critic_loss": 374.26951445007325, "q1": 346.59709643554686, "q2": 346.5985473022461, "actor_loss": -0.9223470140695572, "bc_loss": 0.02609990056976676, "q_term": 0.9328783296346664}
+{"kind": "episode", "step": 102641, "n_terminations": 177, "episode": 224, "ret": 4071.8096192384755, "length": 852, "terminated": true}
+{"kind": "episode", "step": 102674, "n_terminations": 178, "episode": 225, "ret": 63.79921287535848, "length": 33, "terminated": true}
+{"kind": "episode", "step": 102706, "n_terminations": 179, "episode": 226, "ret": 85.15738825533545, "length": 32, "terminated": true}
+{"kind": "episode", "step": 102892, "n_terminations": 180, "episode": 227, "ret": 873.5832228423036, "length": 186, "terminated": true}
+{"kind": "train", "step": 103000, "n_terminations": 180, "bc_weight": 0.402, "sps": 256.24719158098986, "critic_loss": 412.89347708129884, "q1": 346.6730320129395, "q2": 346.6727222290039, "actor_loss": -0.9230901719331741, "bc_loss": 0.026346770867705344, "q_term": 0.9336946986913681}
+{"kind": "episode", "step": 103791, "n_terminations": 181, "episode": 228, "ret": 4831.584455856705, "length": 899, "terminated": true}
+{"kind": "train", "step": 104000, "n_terminations": 181, "bc_weight": 0.401, "sps": 242.47567643440215, "critic_loss": 395.43610919189456, "q1": 347.1625351257324, "q2": 347.1626443786621, "actor_loss": -0.9238308081626893, "bc_loss": 0.026402993481606244, "q_term": 0.9344315637350082}
+{"kind": "episode", "step": 104791, "n_terminations": 181, "episode": 229, "ret": 5464.740094434485, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 104955, "n_terminations": 182, "episode": 230, "ret": 814.8969443495017, "length": 164, "terminated": true}
+{"kind": "train", "step": 105000, "n_terminations": 182, "bc_weight": 0.4, "sps": 244.26633047246793, "critic_loss": 391.5272947692871, "q1": 347.7050564575195, "q2": 347.7078815307617, "actor_loss": -0.924081281542778, "bc_loss": 0.02637064642459154, "q_term": 0.9346426931619645}
+{"kind": "episode", "step": 105955, "n_terminations": 182, "episode": 231, "ret": 5592.561066773022, "length": 1000, "terminated": false}
+{"kind": "train", "step": 106000, "n_terminations": 182, "bc_weight": 0.399, "sps": 240.0150064314095, "critic_loss": 372.92376808166506, "q1": 348.03855349731447, "q2": 348.03963067626955, "actor_loss": -0.9258377710580826, "bc_loss": 0.026224147368222477, "q_term": 0.9363142763376235}
+{"kind": "episode", "step": 106067, "n_terminations": 183, "episode": 232, "ret": 370.023996486248, "length": 112, "terminated": true}
+{"kind": "episode", "step": 106607, "n_terminations": 184, "episode": 233, "ret": 2778.8469257191596, "length": 540, "terminated": true}
+{"kind": "train", "step": 107000, "n_terminations": 184, "bc_weight": 0.398, "sps": 237.1963947856316, "critic_loss": 373.54592053222655, "q1": 348.4666547241211, "q2": 348.4696893005371, "actor_loss": -0.9269313278198242, "bc_loss": 0.026282969631254673, "q_term": 0.9374050717353821}
+{"kind": "episode", "step": 107055, "n_terminations": 185, "episode": 234, "ret": 2273.6552732708747, "length": 448, "terminated": true}
+{"kind": "episode", "step": 107094, "n_terminations": 186, "episode": 235, "ret": 68.07776997841013, "length": 39, "terminated": true}
+{"kind": "train", "step": 108000, "n_terminations": 186, "bc_weight": 0.397, "sps": 239.08014737761084, "critic_loss": 380.09430795288085, "q1": 348.0691057434082, "q2": 348.06993618774413, "actor_loss": -0.925859845995903, "bc_loss": 0.026480948463082313, "q_term": 0.9363860181570053}
+{"kind": "episode", "step": 108094, "n_terminations": 186, "episode": 236, "ret": 4917.824407835612, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 108910, "n_terminations": 187, "episode": 237, "ret": 4431.71104647738, "length": 816, "terminated": true}
+{"kind": "train", "step": 109000, "n_terminations": 187, "bc_weight": 0.396, "sps": 238.87863891189951, "critic_loss": 370.9436640777588, "q1": 348.72841046142577, "q2": 348.73036660766604, "actor_loss": -0.92541845870018, "bc_loss": 0.026372636284679174, "q_term": 0.9358752168416977}
+{"kind": "episode", "step": 109023, "n_terminations": 188, "episode": 238, "ret": 581.5737191621007, "length": 113, "terminated": true}
+{"kind": "episode", "step": 109182, "n_terminations": 189, "episode": 239, "ret": 701.5830897117208, "length": 159, "terminated": true}
+{"kind": "train", "step": 110000, "n_terminations": 189, "bc_weight": 0.395, "sps": 242.6009050312903, "critic_loss": 389.24111585998537, "q1": 348.7639386291504, "q2": 348.76792929077146, "actor_loss": -0.9265865705013275, "bc_loss": 0.026159172538667917, "q_term": 0.9369324897527694}
+{"kind": "episode", "step": 110182, "n_terminations": 189, "episode": 240, "ret": 5504.913232090077, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 110393, "n_terminations": 190, "episode": 241, "ret": 853.1020586626089, "length": 211, "terminated": true}
+{"kind": "train", "step": 111000, "n_terminations": 190, "bc_weight": 0.394, "sps": 250.8005572702583, "critic_loss": 379.7475358123779, "q1": 349.33032864379885, "q2": 349.3310815124512, "actor_loss": -0.9276042453050614, "bc_loss": 0.0264195566251874, "q_term": 0.9380267144441604}
+{"kind": "episode", "step": 111393, "n_terminations": 190, "episode": 242, "ret": 5200.1768214288695, "length": 1000, "terminated": false}
+{"kind": "train", "step": 112000, "n_terminations": 190, "bc_weight": 0.393, "sps": 248.9083010895625, "critic_loss": 368.33193365478513, "q1": 349.508276763916, "q2": 349.5101767578125, "actor_loss": -0.9272878059148788, "bc_loss": 0.026283629883080722, "q_term": 0.9376303532123565}
+{"kind": "episode", "step": 112193, "n_terminations": 191, "episode": 243, "ret": 4182.158994680116, "length": 800, "terminated": true}
+{"kind": "train", "step": 113000, "n_terminations": 191, "bc_weight": 0.392, "sps": 251.008374298773, "critic_loss": 376.8645830078125, "q1": 350.2960884094238, "q2": 350.297541015625, "actor_loss": -0.9289373956918716, "bc_loss": 0.026177736300975085, "q_term": 0.9392121522426605}
+{"kind": "episode", "step": 113193, "n_terminations": 191, "episode": 244, "ret": 5054.721245329609, "length": 1000, "terminated": false}
+{"kind": "train", "step": 114000, "n_terminations": 191, "bc_weight": 0.391, "sps": 247.2802325043934, "critic_loss": 366.4261400756836, "q1": 350.4189941711426, "q2": 350.4206526489258, "actor_loss": -0.9290425120592117, "bc_loss": 0.02630392340570688, "q_term": 0.939340469956398}
+{"kind": "episode", "step": 114193, "n_terminations": 191, "episode": 245, "ret": 5613.397412840978, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 114228, "n_terminations": 192, "episode": 246, "ret": 68.96759448991703, "length": 35, "terminated": true}
+{"kind": "episode", "step": 114405, "n_terminations": 193, "episode": 247, "ret": 855.130099026741, "length": 177, "terminated": true}
+{"kind": "episode", "step": 114813, "n_terminations": 194, "episode": 248, "ret": 1882.800495522234, "length": 408, "terminated": true}
+{"kind": "episode", "step": 114925, "n_terminations": 195, "episode": 249, "ret": 432.47462583507354, "length": 112, "terminated": true}
+{"kind": "episode", "step": 115000, "n_terminations": 196, "episode": 250, "ret": 196.8731736385127, "length": 75, "terminated": true}
+{"kind": "train", "step": 115000, "n_terminations": 196, "bc_weight": 0.39, "sps": 248.8514150277324, "critic_loss": 373.0456521148682, "q1": 350.40161514282227, "q2": 350.39995126342774, "actor_loss": -0.9276116263866424, "bc_loss": 0.02631693997606635, "q_term": 0.9378883010149002}
+{"kind": "episode", "step": 115048, "n_terminations": 197, "episode": 251, "ret": 119.6458847332146, "length": 48, "terminated": true}
+{"kind": "episode", "step": 115281, "n_terminations": 198, "episode": 252, "ret": 1218.0916124778178, "length": 233, "terminated": true}
+{"kind": "train", "step": 116000, "n_terminations": 198, "bc_weight": 0.389, "sps": 251.48590174125476, "critic_loss": 376.5389572448731, "q1": 350.9155289001465, "q2": 350.91871450805667, "actor_loss": -0.9298132439851761, "bc_loss": 0.026155046679079533, "q_term": 0.9400005974769592}
+{"kind": "episode", "step": 116281, "n_terminations": 198, "episode": 253, "ret": 5392.48944571975, "length": 1000, "terminated": false}
+{"kind": "train", "step": 117000, "n_terminations": 198, "bc_weight": 0.388, "sps": 251.1170425944821, "critic_loss": 359.0743173980713, "q1": 351.12225091552733, "q2": 351.1237562561035, "actor_loss": -0.9291611465215683, "bc_loss": 0.026176782477647067, "q_term": 0.9393307772874833}
+{"kind": "episode", "step": 117281, "n_terminations": 198, "episode": 254, "ret": 2715.580029791431, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 117664, "n_terminations": 199, "episode": 255, "ret": 2104.4788506750783, "length": 383, "terminated": true}
+{"kind": "train", "step": 118000, "n_terminations": 199, "bc_weight": 0.387, "sps": 250.57511902500963, "critic_loss": 376.6239852294922, "q1": 350.4707000427246, "q2": 350.4716803894043, "actor_loss": -0.9295030310153961, "bc_loss": 0.026472279269248247, "q_term": 0.9397609739303588}
+{"kind": "episode", "step": 118058, "n_terminations": 200, "episode": 256, "ret": 2104.996315100791, "length": 394, "terminated": true}
+{"kind": "train", "step": 119000, "n_terminations": 200, "bc_weight": 0.386, "sps": 247.00567082502042, "critic_loss": 368.646245803833, "q1": 350.7900806274414, "q2": 350.79256021118164, "actor_loss": -0.9289674241542816, "bc_loss": 0.026346647139638663, "q_term": 0.9391504063606262}
+{"kind": "episode", "step": 119058, "n_terminations": 200, "episode": 257, "ret": 5647.96598526938, "length": 1000, "terminated": false}
+{"kind": "train", "step": 120000, "n_terminations": 200, "bc_weight": 0.385, "sps": 249.78923699623832, "critic_loss": 378.77486395263674, "q1": 351.3626750793457, "q2": 351.3603482055664, "actor_loss": -0.9303523424863815, "bc_loss": 0.026376506328582763, "q_term": 0.9405205129384995}
+{"kind": "eval", "step": 120000, "n_terminations": 200, "mean_return": 4391.393980738709, "std_return": 1721.363175317364, "returns": [32.10976463046008, 2935.6644722721894, 5667.317497075572, 4811.814202499562, 4884.025259041793, 6041.43919084635, 1820.3571285341181, 3552.45709929876, 5297.212657305958, 4392.992493019831, 2196.4936738810993, 5921.163337611092, 4245.6331621709405, 4983.229428383645, 5920.307974119813, 6142.003749165048, 6080.1772608440715, 5541.705724187651, 5567.463786962837, 1794.3117529233919]}
+{"kind": "episode", "step": 120058, "n_terminations": 200, "episode": 258, "ret": 5378.597969931242, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 120802, "n_terminations": 201, "episode": 259, "ret": 4081.5526686971384, "length": 744, "terminated": true}
+{"kind": "train", "step": 121000, "n_terminations": 201, "bc_weight": 0.384, "sps": 148.37816624600342, "critic_loss": 376.8180621948242, "q1": 351.4504676208496, "q2": 351.4536504211426, "actor_loss": -0.930062601685524, "bc_loss": 0.026320847287774087, "q_term": 0.9401829887628556}
+{"kind": "episode", "step": 121673, "n_terminations": 202, "episode": 260, "ret": 4143.767229171885, "length": 871, "terminated": true}
+{"kind": "train", "step": 122000, "n_terminations": 202, "bc_weight": 0.383, "sps": 241.2318242349209, "critic_loss": 362.1252444152832, "q1": 352.1232510986328, "q2": 352.1263259582519, "actor_loss": -0.9316183130741119, "bc_loss": 0.026487434972077607, "q_term": 0.94177625644207}
+{"kind": "episode", "step": 122191, "n_terminations": 203, "episode": 261, "ret": 2521.065444833135, "length": 518, "terminated": true}
+{"kind": "episode", "step": 122977, "n_terminations": 204, "episode": 262, "ret": 4002.7811355810463, "length": 786, "terminated": true}
+{"kind": "train", "step": 123000, "n_terminations": 204, "bc_weight": 0.382, "sps": 253.65529860454944, "critic_loss": 362.6508885650635, "q1": 352.32716137695314, "q2": 352.3285180969238, "actor_loss": -0.9322708866596222, "bc_loss": 0.026335997752845286, "q_term": 0.9423444048166275}
+{"kind": "episode", "step": 123066, "n_terminations": 205, "episode": 263, "ret": 303.9939835195462, "length": 89, "terminated": true}
+{"kind": "episode", "step": 123671, "n_terminations": 206, "episode": 264, "ret": 3048.716151246679, "length": 605, "terminated": true}
+{"kind": "train", "step": 124000, "n_terminations": 206, "bc_weight": 0.381, "sps": 238.36312211235114, "critic_loss": 356.2488991546631, "q1": 351.97280691528323, "q2": 351.9733958740234, "actor_loss": -0.9307738548517227, "bc_loss": 0.026320901840925216, "q_term": 0.9408152372837066}
+{"kind": "episode", "step": 124436, "n_terminations": 207, "episode": 265, "ret": 3869.2637734309055, "length": 765, "terminated": true}
+{"kind": "train", "step": 125000, "n_terminations": 207, "bc_weight": 0.38, "sps": 243.60500447128564, "critic_loss": 348.7877154846191, "q1": 352.56618579101564, "q2": 352.5665025024414, "actor_loss": -0.9317184379100799, "bc_loss": 0.026327762715518475, "q_term": 0.9417361000776291}
+{"kind": "episode", "step": 125174, "n_terminations": 208, "episode": 266, "ret": 3767.952300421337, "length": 738, "terminated": true}
+{"kind": "train", "step": 126000, "n_terminations": 208, "bc_weight": 0.379, "sps": 247.24342675773414, "critic_loss": 355.8676688079834, "q1": 352.8948512573242, "q2": 352.89231399536135, "actor_loss": -0.9326993418931961, "bc_loss": 0.026210155818611382, "q_term": 0.9426460644006729}
+{"kind": "episode", "step": 126174, "n_terminations": 208, "episode": 267, "ret": 5461.078171304952, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 126252, "n_terminations": 209, "episode": 268, "ret": 268.7352807814143, "length": 78, "terminated": true}
+{"kind": "episode", "step": 126441, "n_terminations": 210, "episode": 269, "ret": 892.50049505081, "length": 189, "terminated": true}
+{"kind": "train", "step": 127000, "n_terminations": 210, "bc_weight": 0.378, "sps": 249.95394899509287, "critic_loss": 357.84612008666994, "q1": 353.5629273071289, "q2": 353.5627191772461, "actor_loss": -0.9336543554067611, "bc_loss": 0.02627952055260539, "q_term": 0.9436010822057724}
+{"kind": "episode", "step": 127441, "n_terminations": 210, "episode": 270, "ret": 4512.7202290108735, "length": 1000, "terminated": false}
+{"kind": "train", "step": 128000, "n_terminations": 210, "bc_weight": 0.377, "sps": 251.62142778511503, "critic_loss": 352.3739222869873, "q1": 353.3982290649414, "q2": 353.40076724243164, "actor_loss": -0.9327001466751098, "bc_loss": 0.02641339587420225, "q_term": 0.942671138048172}
+{"kind": "episode", "step": 128441, "n_terminations": 210, "episode": 271, "ret": 5258.700325628457, "length": 1000, "terminated": false}
+{"kind": "train", "step": 129000, "n_terminations": 210, "bc_weight": 0.376, "sps": 247.71304317217914, "critic_loss": 362.80229824829104, "q1": 353.68307482910154, "q2": 353.68251150512697, "actor_loss": -0.9335512019395829, "bc_loss": 0.026441173397004605, "q_term": 0.9435062519311905}
+{"kind": "episode", "step": 129441, "n_terminations": 210, "episode": 272, "ret": 5346.039905585934, "length": 1000, "terminated": false}
+{"kind": "train", "step": 130000, "n_terminations": 210, "bc_weight": 0.375, "sps": 251.7068194161473, "critic_loss": 345.7119351501465, "q1": 354.0251210632324, "q2": 354.0239703674316, "actor_loss": -0.9347997493743897, "bc_loss": 0.026455268882215024, "q_term": 0.9447336641550064}
+{"kind": "episode", "step": 130045, "n_terminations": 211, "episode": 273, "ret": 3145.2040802772403, "length": 604, "terminated": true}
+{"kind": "episode", "step": 130085, "n_terminations": 212, "episode": 274, "ret": 103.3882364916992, "length": 40, "terminated": true}
+{"kind": "episode", "step": 130111, "n_terminations": 213, "episode": 275, "ret": 52.822910357347375, "length": 26, "terminated": true}
+{"kind": "train", "step": 131000, "n_terminations": 213, "bc_weight": 0.374, "sps": 241.07276386731775, "critic_loss": 355.76827825927734, "q1": 354.49936685180666, "q2": 354.49934439086917, "actor_loss": -0.9344656863212586, "bc_loss": 0.026309987787157298, "q_term": 0.9443187807798386}
+{"kind": "episode", "step": 131111, "n_terminations": 213, "episode": 276, "ret": 5675.157336673257, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 131421, "n_terminations": 214, "episode": 277, "ret": 1592.1965485500236, "length": 310, "terminated": true}
+{"kind": "train", "step": 132000, "n_terminations": 214, "bc_weight": 0.373, "sps": 243.72951889223026, "critic_loss": 352.8316342163086, "q1": 354.05461645507813, "q2": 354.0568609008789, "actor_loss": -0.9341750830411911, "bc_loss": 0.02659491302445531, "q_term": 0.9441082271337509}
+{"kind": "episode", "step": 132421, "n_terminations": 214, "episode": 278, "ret": 5611.287675555011, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 132882, "n_terminations": 215, "episode": 279, "ret": 2633.31773913403, "length": 461, "terminated": true}
+{"kind": "train", "step": 133000, "n_terminations": 215, "bc_weight": 0.372, "sps": 244.37652815297304, "critic_loss": 342.16867821502683, "q1": 355.3872124328613, "q2": 355.3869740600586, "actor_loss": -0.9361431778669357, "bc_loss": 0.02640305421501398, "q_term": 0.9459782643318176}
+{"kind": "episode", "step": 133816, "n_terminations": 216, "episode": 280, "ret": 5143.7346092114985, "length": 934, "terminated": true}
+{"kind": "train", "step": 134000, "n_terminations": 216, "bc_weight": 0.371, "sps": 243.76824678531403, "critic_loss": 339.7134647064209, "q1": 355.41405630493165, "q2": 355.41343032836915, "actor_loss": -0.9356054140329361, "bc_loss": 0.02632598440349102, "q_term": 0.9453854475021363}
+{"kind": "episode", "step": 134816, "n_terminations": 216, "episode": 281, "ret": 5445.1900007302775, "length": 1000, "terminated": false}
+{"kind": "train", "step": 135000, "n_terminations": 216, "bc_weight": 0.37, "sps": 243.73854108010073, "critic_loss": 349.09092318725584, "q1": 355.7402555541992, "q2": 355.7402313232422, "actor_loss": -0.93511086332798, "bc_loss": 0.02632192837074399, "q_term": 0.9448630961179734}
+{"kind": "episode", "step": 135028, "n_terminations": 217, "episode": 282, "ret": 1051.3185361807966, "length": 212, "terminated": true}
+{"kind": "episode", "step": 135664, "n_terminations": 218, "episode": 283, "ret": 3379.9416761497687, "length": 636, "terminated": true}
+{"kind": "train", "step": 136000, "n_terminations": 218, "bc_weight": 0.369, "sps": 244.6573598612752, "critic_loss": 335.03624166870117, "q1": 356.2312502746582, "q2": 356.22880932617187, "actor_loss": -0.9371395469903946, "bc_loss": 0.026258093751966954, "q_term": 0.9468419232368469}
+{"kind": "episode", "step": 136024, "n_terminations": 219, "episode": 284, "ret": 1909.0279744881007, "length": 360, "terminated": true}
+{"kind": "train", "step": 137000, "n_terminations": 219, "bc_weight": 0.368, "sps": 242.24144303984625, "critic_loss": 332.61968406677244, "q1": 356.72268411254885, "q2": 356.7220792541504, "actor_loss": -0.9383828887939453, "bc_loss": 0.026182066932320596, "q_term": 0.9480309306383133}
+{"kind": "episode", "step": 137024, "n_terminations": 219, "episode": 285, "ret": 5167.023449920617, "length": 1000, "terminated": false}
+{"kind": "train", "step": 138000, "n_terminations": 219, "bc_weight": 0.367, "sps": 244.12273745937986, "critic_loss": 345.0466457748413, "q1": 356.86772451782224, "q2": 356.8702735290527, "actor_loss": -0.9372675915956498, "bc_loss": 0.02629383495077491, "q_term": 0.9469305371046066}
+{"kind": "episode", "step": 138024, "n_terminations": 219, "episode": 286, "ret": 4878.259486788073, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 138249, "n_terminations": 220, "episode": 287, "ret": 960.9913923550567, "length": 225, "terminated": true}
+{"kind": "episode", "step": 138656, "n_terminations": 221, "episode": 288, "ret": 1669.9548877676, "length": 407, "terminated": true}
+{"kind": "train", "step": 139000, "n_terminations": 221, "bc_weight": 0.366, "sps": 243.4154904565294, "critic_loss": 355.19449726867674, "q1": 357.0393055114746, "q2": 357.0383564758301, "actor_loss": -0.937817879319191, "bc_loss": 0.026306799944490193, "q_term": 0.9474592636823654}
+{"kind": "episode", "step": 139656, "n_terminations": 221, "episode": 289, "ret": 5281.455705495859, "length": 1000, "terminated": false}
+{"kind": "train", "step": 140000, "n_terminations": 221, "bc_weight": 0.365, "sps": 251.75265731660002, "critic_loss": 354.9004908905029, "q1": 356.69228094482423, "q2": 356.6908153076172, "actor_loss": -0.9380592923164368, "bc_loss": 0.02644530151039362, "q_term": 0.947725046992302}
+{"kind": "eval", "step": 140000, "n_terminations": 221, "mean_return": 4256.549092723233, "std_return": 2129.149767639215, "returns": [5823.352950563181, 5766.42703324507, 2089.0476809410447, 2287.581561170968, 101.33609782946219, 5508.530537083669, 5745.772960490311, 5802.338262699895, 5436.655390623535, 4.239740390389283, 4427.513731480566, 1000.251412181063, 1231.6491421219225, 5701.176998305818, 5807.326245658793, 5665.683577804961, 5752.499813074199, 5770.069370612186, 5695.753153362263, 5513.776194825354]}
+{"kind": "episode", "step": 140537, "n_terminations": 222, "episode": 290, "ret": 4245.355141914941, "length": 881, "terminated": true}
+{"kind": "episode", "step": 140559, "n_terminations": 223, "episode": 291, "ret": 35.60238289640769, "length": 22, "terminated": true}
+{"kind": "episode", "step": 140960, "n_terminations": 224, "episode": 292, "ret": 1953.408592905037, "length": 401, "terminated": true}
+{"kind": "train", "step": 141000, "n_terminations": 224, "bc_weight": 0.364, "sps": 159.41137757477844, "critic_loss": 345.4399094543457, "q1": 357.8118025512695, "q2": 357.81612673950195, "actor_loss": -0.9400160571336746, "bc_loss": 0.026353618051856757, "q_term": 0.9496219094991684}
+{"kind": "episode", "step": 141430, "n_terminations": 225, "episode": 293, "ret": 2579.5582029959774, "length": 470, "terminated": true}
+{"kind": "train", "step": 142000, "n_terminations": 225, "bc_weight": 0.363, "sps": 246.05324067759582, "critic_loss": 344.08108129119876, "q1": 357.37624227905275, "q2": 357.375319732666, "actor_loss": -0.9386307585239411, "bc_loss": 0.026393310986459254, "q_term": 0.9482247514724731}
+{"kind": "episode", "step": 142430, "n_terminations": 225, "episode": 294, "ret": 5221.442059318561, "length": 1000, "terminated": false}
+{"kind": "train", "step": 143000, "n_terminations": 225, "bc_weight": 0.362, "sps": 252.41534468145133, "critic_loss": 329.18692545318606, "q1": 357.94016418457034, "q2": 357.93924835205075, "actor_loss": -0.9390243124961853, "bc_loss": 0.02624112121760845, "q_term": 0.9485367103815079}
+{"kind": "episode", "step": 143330, "n_terminations": 226, "episode": 295, "ret": 4765.312828039029, "length": 900, "terminated": true}
+{"kind": "episode", "step": 143576, "n_terminations": 227, "episode": 296, "ret": 1145.3228707779663, "length": 246, "terminated": true}
+{"kind": "train", "step": 144000, "n_terminations": 227, "bc_weight": 0.361, "sps": 243.78030395584793, "critic_loss": 333.2344281921387, "q1": 358.5168038330078, "q2": 358.5182918395996, "actor_loss": -0.9400436133146286, "bc_loss": 0.026291764248162507, "q_term": 0.9495480388402939}
+{"kind": "episode", "step": 144576, "n_terminations": 227, "episode": 297, "ret": 5506.232709208149, "length": 1000, "terminated": false}
+{"kind": "train", "step": 145000, "n_terminations": 227, "bc_weight": 0.36, "sps": 242.65147348886353, "critic_loss": 334.6444230194092, "q1": 358.7963582458496, "q2": 358.7947062072754, "actor_loss": -0.9402189309597015, "bc_loss": 0.026465035431087018, "q_term": 0.9497595565319061}
+{"kind": "episode", "step": 145576, "n_terminations": 227, "episode": 298, "ret": 5403.925208857344, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 145622, "n_terminations": 228, "episode": 299, "ret": 139.04127303136082, "length": 46, "terminated": true}
+{"kind": "train", "step": 146000, "n_terminations": 228, "bc_weight": 0.359, "sps": 247.35338091169476, "critic_loss": 342.6913824005127, "q1": 358.57566455078126, "q2": 358.57499395751955, "actor_loss": -0.9394919582605362, "bc_loss": 0.026518563196063043, "q_term": 0.9490253558158874}
+{"kind": "episode", "step": 146110, "n_terminations": 229, "episode": 300, "ret": 2674.485995451688, "length": 488, "terminated": true}
+{"kind": "episode", "step": 146177, "n_terminations": 230, "episode": 301, "ret": 269.72679769800544, "length": 67, "terminated": true}
+{"kind": "train", "step": 147000, "n_terminations": 230, "bc_weight": 0.358, "sps": 249.25505239741142, "critic_loss": 339.18278576660157, "q1": 359.2105778198242, "q2": 359.21111450195315, "actor_loss": -0.9401833468675613, "bc_loss": 0.026317889243364333, "q_term": 0.9496182922124863}
+{"kind": "episode", "step": 147177, "n_terminations": 230, "episode": 302, "ret": 5613.924768781551, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 147769, "n_terminations": 231, "episode": 303, "ret": 3268.717242147186, "length": 592, "terminated": true}
+{"kind": "train", "step": 148000, "n_terminations": 231, "bc_weight": 0.357, "sps": 244.786638442957, "critic_loss": 344.1152479019165, "q1": 359.6590630187988, "q2": 359.65877041625976, "actor_loss": -0.9422119972705841, "bc_loss": 0.026225175336003305, "q_term": 0.9515875079631806}
+{"kind": "episode", "step": 148256, "n_terminations": 232, "episode": 304, "ret": 2637.4664383126765, "length": 487, "terminated": true}
+{"kind": "train", "step": 149000, "n_terminations": 232, "bc_weight": 0.356, "sps": 240.86145199411823, "critic_loss": 337.86317633056643, "q1": 359.89646395874024, "q2": 359.90071051025393, "actor_loss": -0.9420617022514344, "bc_loss": 0.02631115770339966, "q_term": 0.9514415417909622}
+{"kind": "episode", "step": 149256, "n_terminations": 232, "episode": 305, "ret": 5295.956333980345, "length": 1000, "terminated": false}
+{"kind": "train", "step": 150000, "n_terminations": 232, "bc_weight": 0.355, "sps": 240.50348168639093, "critic_loss": 338.2009799346924, "q1": 359.9289284057617, "q2": 359.9277197265625, "actor_loss": -0.9415809760093689, "bc_loss": 0.02635080785676837, "q_term": 0.9509486392736435}
+{"kind": "episode", "step": 150256, "n_terminations": 232, "episode": 306, "ret": 5020.891777712159, "length": 1000, "terminated": false}
+{"kind": "train", "step": 151000, "n_terminations": 232, "bc_weight": 0.354, "sps": 249.5311813136228, "critic_loss": 325.17957833862306, "q1": 360.18514990234377, "q2": 360.1845305480957, "actor_loss": -0.9411052742004394, "bc_loss": 0.026469631388783454, "q_term": 0.9504887270927429}
+{"kind": "episode", "step": 151256, "n_terminations": 232, "episode": 307, "ret": 5387.019314351389, "length": 1000, "terminated": false}
+{"kind": "train", "step": 152000, "n_terminations": 232, "bc_weight": 0.353, "sps": 250.41906629235888, "critic_loss": 307.21328173828124, "q1": 361.32758822631837, "q2": 361.32703622436526, "actor_loss": -0.9437789626121521, "bc_loss": 0.026452340733259916, "q_term": 0.9531298204660416}
+{"kind": "episode", "step": 152256, "n_terminations": 232, "episode": 308, "ret": 5364.8472629020325, "length": 1000, "terminated": false}
+{"kind": "train", "step": 153000, "n_terminations": 232, "bc_weight": 0.352, "sps": 249.65622674523183, "critic_loss": 320.3021807937622, "q1": 360.88073806762696, "q2": 360.8816178588867, "actor_loss": -0.943078082561493, "bc_loss": 0.02627662932872772, "q_term": 0.952340560555458}
+{"kind": "episode", "step": 153256, "n_terminations": 232, "episode": 309, "ret": 5631.947902373276, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 153427, "n_terminations": 233, "episode": 310, "ret": 878.1382273707368, "length": 171, "terminated": true}
+{"kind": "train", "step": 154000, "n_terminations": 233, "bc_weight": 0.351, "sps": 250.87461807795643, "critic_loss": 311.7516474075317, "q1": 361.7264002685547, "q2": 361.72653524780276, "actor_loss": -0.9427458174228668, "bc_loss": 0.026418068550527096, "q_term": 0.9520317184925079}
+{"kind": "episode", "step": 154427, "n_terminations": 233, "episode": 311, "ret": 5060.753532870143, "length": 1000, "terminated": false}
+{"kind": "train", "step": 155000, "n_terminations": 233, "bc_weight": 0.35, "sps": 250.87643376944428, "critic_loss": 320.98959915161134, "q1": 361.9601392822266, "q2": 361.9628049621582, "actor_loss": -0.9440192055702209, "bc_loss": 0.026292620781809092, "q_term": 0.9532347184419632}
+{"kind": "episode", "step": 155427, "n_terminations": 233, "episode": 312, "ret": 5810.254114794094, "length": 1000, "terminated": false}
+{"kind": "train", "step": 156000, "n_terminations": 233, "bc_weight": 0.349, "sps": 251.4617477902767, "critic_loss": 317.57826147460935, "q1": 362.32248205566407, "q2": 362.31956222534177, "actor_loss": -0.9444344358444214, "bc_loss": 0.026293377548456193, "q_term": 0.9536239514350892}
+{"kind": "episode", "step": 156378, "n_terminations": 234, "episode": 313, "ret": 5088.157059284893, "length": 951, "terminated": true}
+{"kind": "train", "step": 157000, "n_terminations": 234, "bc_weight": 0.348, "sps": 251.46706970426942, "critic_loss": 324.76756045532227, "q1": 362.9875327758789, "q2": 362.98692156982423, "actor_loss": -0.9443012783527375, "bc_loss": 0.02646430728211999, "q_term": 0.9535240309238434}
+{"kind": "episode", "step": 157378, "n_terminations": 234, "episode": 314, "ret": 5471.2904489506245, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 157576, "n_terminations": 235, "episode": 315, "ret": 872.4867745498077, "length": 198, "terminated": true}
+{"kind": "train", "step": 158000, "n_terminations": 235, "bc_weight": 0.347, "sps": 246.555251443146, "critic_loss": 312.51762043762204, "q1": 363.08014663696287, "q2": 363.08194357299806, "actor_loss": -0.9447705490589142, "bc_loss": 0.026344590153545143, "q_term": 0.9539252759218216}
+{"kind": "episode", "step": 158576, "n_terminations": 235, "episode": 316, "ret": 5162.797984517958, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 158633, "n_terminations": 236, "episode": 317, "ret": 204.85562376799845, "length": 57, "terminated": true}
+{"kind": "episode", "step": 158929, "n_terminations": 237, "episode": 318, "ret": 1407.9176644587717, "length": 296, "terminated": true}
+{"kind": "train", "step": 159000, "n_terminations": 237, "bc_weight": 0.346, "sps": 264.1710005982781, "critic_loss": 318.0596869735718, "q1": 363.4899612426758, "q2": 363.49002352905273, "actor_loss": -0.9442539716959, "bc_loss": 0.026407480906695126, "q_term": 0.9534041510820389}
+{"kind": "episode", "step": 159929, "n_terminations": 237, "episode": 319, "ret": 5418.428679980216, "length": 1000, "terminated": false}
+{"kind": "train", "step": 160000, "n_terminations": 237, "bc_weight": 0.345, "sps": 252.13184445662733, "critic_loss": 319.1367209777832, "q1": 363.83124838256833, "q2": 363.82871005249024, "actor_loss": -0.9446289938688278, "bc_loss": 0.02654219229891896, "q_term": 0.9537992843389511}
+{"kind": "eval", "step": 160000, "n_terminations": 237, "mean_return": 4201.682477893607, "std_return": 2120.3294999917593, "returns": [5554.6497682502995, 547.2758663243837, 2281.616020549709, 5693.693211871341, 3162.9609964528036, 5862.204711545355, 1403.4285537825253, 5072.223601308402, 4436.046676203094, 5930.098826173646, 6112.992889202198, 3202.142044953942, 5818.474533094826, 5751.531306942852, -1084.2978415077885, 5138.168556530261, 5607.12600113555, 5908.345656800228, 1617.339399087391, 6017.62877917112]}
+{"kind": "episode", "step": 160929, "n_terminations": 237, "episode": 320, "ret": 5387.454525875558, "length": 1000, "terminated": false}
+{"kind": "train", "step": 161000, "n_terminations": 237, "bc_weight": 0.344, "sps": 153.80046441146894, "critic_loss": 314.9376213607788, "q1": 364.0964505004883, "q2": 364.0975997619629, "actor_loss": -0.94609477353096, "bc_loss": 0.026427757758647204, "q_term": 0.9551991317272186}
+{"kind": "episode", "step": 161929, "n_terminations": 237, "episode": 321, "ret": 5328.759376953711, "length": 1000, "terminated": false}
+{"kind": "train", "step": 162000, "n_terminations": 237, "bc_weight": 0.34299999999999997, "sps": 252.58431513300366, "critic_loss": 312.87816481781005, "q1": 364.2515815429687, "q2": 364.2527889099121, "actor_loss": -0.9454171836376191, "bc_loss": 0.026453918416053056, "q_term": 0.9545040806531906}
+{"kind": "episode", "step": 162543, "n_terminations": 238, "episode": 322, "ret": 3108.3275016274897, "length": 614, "terminated": true}
+{"kind": "train", "step": 163000, "n_terminations": 238, "bc_weight": 0.34199999999999997, "sps": 255.20997683075547, "critic_loss": 338.00963942718505, "q1": 364.95839352416994, "q2": 364.9590739440918, "actor_loss": -0.9457066177129746, "bc_loss": 0.026352688807994126, "q_term": 0.9547323690652847}
+{"kind": "episode", "step": 163035, "n_terminations": 239, "episode": 323, "ret": 2705.0119659594575, "length": 492, "terminated": true}
+{"kind": "train", "step": 164000, "n_terminations": 239, "bc_weight": 0.34099999999999997, "sps": 259.34814594046617, "critic_loss": 311.7743142547607, "q1": 365.3643376464844, "q2": 365.3652385559082, "actor_loss": -0.9456364682912827, "bc_loss": 0.026347569696605205, "q_term": 0.9546341121196746}
+{"kind": "episode", "step": 164035, "n_terminations": 239, "episode": 324, "ret": 5452.046573748236, "length": 1000, "terminated": false}
+{"kind": "train", "step": 165000, "n_terminations": 239, "bc_weight": 0.33999999999999997, "sps": 249.92682691968503, "critic_loss": 314.2368857421875, "q1": 365.84483779907225, "q2": 365.8412127075195, "actor_loss": -0.9467999225854874, "bc_loss": 0.026541578974574806, "q_term": 0.9558373414278031}
+{"kind": "episode", "step": 165035, "n_terminations": 239, "episode": 325, "ret": 5259.786966065164, "length": 1000, "terminated": false}
+{"kind": "train", "step": 166000, "n_terminations": 239, "bc_weight": 0.33899999999999997, "sps": 249.69629629717826, "critic_loss": 322.2079447555542, "q1": 366.18174273681643, "q2": 366.1835015563965, "actor_loss": -0.9482745097875596, "bc_loss": 0.026469620935618877, "q_term": 0.9572609267234802}
+{"kind": "episode", "step": 166035, "n_terminations": 239, "episode": 326, "ret": 5787.954131173571, "length": 1000, "terminated": false}
+{"kind": "train", "step": 167000, "n_terminations": 239, "bc_weight": 0.33799999999999997, "sps": 249.6098715036768, "critic_loss": 318.34659647369386, "q1": 366.6060001220703, "q2": 366.6053580932617, "actor_loss": -0.9475071319341659, "bc_loss": 0.02647078013420105, "q_term": 0.9564674396514893}
+{"kind": "episode", "step": 167035, "n_terminations": 239, "episode": 327, "ret": 5376.27171868581, "length": 1000, "terminated": false}
+{"kind": "train", "step": 168000, "n_terminations": 239, "bc_weight": 0.33699999999999997, "sps": 250.05863491712594, "critic_loss": 306.3915914840698, "q1": 366.172888671875, "q2": 366.172511932373, "actor_loss": -0.9468925864696502, "bc_loss": 0.02668742185458541, "q_term": 0.9558995506763458}
+{"kind": "episode", "step": 168035, "n_terminations": 239, "episode": 328, "ret": 5364.085873749773, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 168956, "n_terminations": 240, "episode": 329, "ret": 4818.131661204861, "length": 921, "terminated": true}
+{"kind": "train", "step": 169000, "n_terminations": 240, "bc_weight": 0.33599999999999997, "sps": 250.23730251091413, "critic_loss": 310.0006764221191, "q1": 367.2075097045898, "q2": 367.2067758789062, "actor_loss": -0.9481127738952637, "bc_loss": 0.02644992422312498, "q_term": 0.9570131468772888}
+{"kind": "episode", "step": 169956, "n_terminations": 240, "episode": 330, "ret": 5542.568698922878, "length": 1000, "terminated": false}
+{"kind": "train", "step": 170000, "n_terminations": 240, "bc_weight": 0.33499999999999996, "sps": 245.83789508148254, "critic_loss": 298.408789894104, "q1": 367.42041262817384, "q2": 367.42137173461913, "actor_loss": -0.9472765172719956, "bc_loss": 0.026513256318867206, "q_term": 0.9561716564893723}
+{"kind": "episode", "step": 170956, "n_terminations": 240, "episode": 331, "ret": 5549.182324784466, "length": 1000, "terminated": false}
+{"kind": "train", "step": 171000, "n_terminations": 240, "bc_weight": 0.33399999999999996, "sps": 249.00435162042947, "critic_loss": 310.7961098175049, "q1": 367.9180686035156, "q2": 367.9209100341797, "actor_loss": -0.9486293888092041, "bc_loss": 0.026372214548289776, "q_term": 0.9574508258104324}
+{"kind": "episode", "step": 171956, "n_terminations": 240, "episode": 332, "ret": 5423.564945532812, "length": 1000, "terminated": false}
+{"kind": "train", "step": 172000, "n_terminations": 240, "bc_weight": 0.33299999999999996, "sps": 242.0751388555824, "critic_loss": 316.1769782333374, "q1": 368.5741588134766, "q2": 368.5741069335937, "actor_loss": -0.9484571886062622, "bc_loss": 0.026485684372484684, "q_term": 0.957290156006813}
+{"kind": "episode", "step": 172956, "n_terminations": 240, "episode": 333, "ret": 5515.7171554047645, "length": 1000, "terminated": false}
+{"kind": "train", "step": 173000, "n_terminations": 240, "bc_weight": 0.33199999999999996, "sps": 248.53841678637403, "critic_loss": 305.34678257751466, "q1": 368.7609216003418, "q2": 368.75842782592775, "actor_loss": -0.9499886375665665, "bc_loss": 0.02656678344681859, "q_term": 0.9588220783472061}
+{"kind": "episode", "step": 173215, "n_terminations": 241, "episode": 334, "ret": 1292.4600105295642, "length": 259, "terminated": true}
+{"kind": "episode", "step": 173454, "n_terminations": 242, "episode": 335, "ret": 1091.986374305154, "length": 239, "terminated": true}
+{"kind": "episode", "step": 173629, "n_terminations": 243, "episode": 336, "ret": 579.4965193822954, "length": 175, "terminated": true}
+{"kind": "episode", "step": 173851, "n_terminations": 244, "episode": 337, "ret": 1159.7400490791745, "length": 222, "terminated": true}
+{"kind": "episode", "step": 173895, "n_terminations": 245, "episode": 338, "ret": 98.24694669257426, "length": 44, "terminated": true}
+{"kind": "train", "step": 174000, "n_terminations": 245, "bc_weight": 0.33099999999999996, "sps": 250.61169558371026, "critic_loss": 298.05185019683836, "q1": 369.40398162841797, "q2": 369.40463568115234, "actor_loss": -0.9502248297929764, "bc_loss": 0.026446003928780555, "q_term": 0.9589916645288468}
+{"kind": "episode", "step": 174895, "n_terminations": 245, "episode": 339, "ret": 5495.821943304983, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 174945, "n_terminations": 246, "episode": 340, "ret": 133.0213248201012, "length": 50, "terminated": true}
+{"kind": "train", "step": 175000, "n_terminations": 246, "bc_weight": 0.32999999999999996, "sps": 249.42288714313452, "critic_loss": 295.7181691741943, "q1": 369.77802334594725, "q2": 369.7769291992187, "actor_loss": -0.9501215306520462, "bc_loss": 0.026346297204494475, "q_term": 0.9588289641141892}
+{"kind": "episode", "step": 175156, "n_terminations": 247, "episode": 341, "ret": 1077.8596029393455, "length": 211, "terminated": true}
+{"kind": "train", "step": 176000, "n_terminations": 247, "bc_weight": 0.32899999999999996, "sps": 249.66564847291176, "critic_loss": 314.7535260696411, "q1": 369.97330825805665, "q2": 369.97199093627927, "actor_loss": -0.9498346519470214, "bc_loss": 0.02648182176798582, "q_term": 0.9585604076385498}
+{"kind": "episode", "step": 176156, "n_terminations": 247, "episode": 342, "ret": 5306.376036178011, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 176368, "n_terminations": 248, "episode": 343, "ret": 1089.0241933603054, "length": 212, "terminated": true}
+{"kind": "train", "step": 177000, "n_terminations": 248, "bc_weight": 0.32799999999999996, "sps": 248.8738591734759, "critic_loss": 283.81769777679443, "q1": 370.31348623657226, "q2": 370.31387924194337, "actor_loss": -0.9493743851184845, "bc_loss": 0.026454057052731513, "q_term": 0.9580645245313645}
+{"kind": "episode", "step": 177368, "n_terminations": 248, "episode": 344, "ret": 5636.796820162483, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 177601, "n_terminations": 249, "episode": 345, "ret": 1167.153291833359, "length": 233, "terminated": true}
+{"kind": "episode", "step": 177778, "n_terminations": 250, "episode": 346, "ret": 863.2900572340333, "length": 177, "terminated": true}
+{"kind": "train", "step": 178000, "n_terminations": 250, "bc_weight": 0.32699999999999996, "sps": 249.40385857007638, "critic_loss": 305.3042332763672, "q1": 371.1130504150391, "q2": 371.11389218139647, "actor_loss": -0.9501705032587051, "bc_loss": 0.026596327245235443, "q_term": 0.9588807983398437}
+{"kind": "episode", "step": 178778, "n_terminations": 250, "episode": 347, "ret": 5666.029270027655, "length": 1000, "terminated": false}
+{"kind": "train", "step": 179000, "n_terminations": 250, "bc_weight": 0.32599999999999996, "sps": 263.75392096432614, "critic_loss": 319.7103274078369, "q1": 371.019956451416, "q2": 371.0201551818848, "actor_loss": -0.9508067545890808, "bc_loss": 0.026634474597871303, "q_term": 0.9595028553009033}
+{"kind": "episode", "step": 179778, "n_terminations": 250, "episode": 348, "ret": 5316.904743110456, "length": 1000, "terminated": false}
+{"kind": "train", "step": 180000, "n_terminations": 250, "bc_weight": 0.32499999999999996, "sps": 248.78078668937758, "critic_loss": 318.39281670379637, "q1": 371.87713766479493, "q2": 371.87292608642576, "actor_loss": -0.9518086206912995, "bc_loss": 0.026531342290341854, "q_term": 0.9604445608854294}
+{"kind": "eval", "step": 180000, "n_terminations": 250, "mean_return": 4245.355558090686, "std_return": 2188.119242034064, "returns": [5592.636692964681, 5554.413353947694, 5983.192561284139, 367.8752075910223, 712.8160626823808, 5377.000725242542, 5520.601616614384, 5598.8715709666285, 4102.147925017521, 5785.529971865938, 5851.437993616268, 5894.159969133735, 1485.5186762662197, 1164.8525368228538, 5677.015917000003, 6111.57625912022, 2300.1639995259393, 5999.265482385359, 66.06657788750873, 5761.96806187869]}
+{"kind": "episode", "step": 180778, "n_terminations": 250, "episode": 349, "ret": 5158.483525178469, "length": 1000, "terminated": false}
+{"kind": "train", "step": 181000, "n_terminations": 250, "bc_weight": 0.32399999999999995, "sps": 155.59922784749784, "critic_loss": 295.7086544342041, "q1": 372.28442068481445, "q2": 372.2861269836426, "actor_loss": -0.9517629654407501, "bc_loss": 0.02650992527604103, "q_term": 0.9603654291629792}
+{"kind": "episode", "step": 181778, "n_terminations": 250, "episode": 350, "ret": 5149.069999314983, "length": 1000, "terminated": false}
+{"kind": "train", "step": 182000, "n_terminations": 250, "bc_weight": 0.32299999999999995, "sps": 256.8772300965045, "critic_loss": 285.9665029602051, "q1": 372.682513092041, "q2": 372.68263220214845, "actor_loss": -0.952571484208107, "bc_loss": 0.026645617749541998, "q_term": 0.9611912844181061}
+{"kind": "episode", "step": 182778, "n_terminations": 250, "episode": 351, "ret": 5603.167912045186, "length": 1000, "terminated": false}
+{"kind": "train", "step": 183000, "n_terminations": 250, "bc_weight": 0.32199999999999995, "sps": 248.48208238722668, "critic_loss": 287.8903486251831, "q1": 373.3009082336426, "q2": 373.2997027282715, "actor_loss": -0.9533177794218063, "bc_loss": 0.02646282184869051, "q_term": 0.9618520174026489}
+{"kind": "episode", "step": 183778, "n_terminations": 250, "episode": 352, "ret": 5535.94435598827, "length": 1000, "terminated": false}
+{"kind": "train", "step": 184000, "n_terminations": 250, "bc_weight": 0.32099999999999995, "sps": 264.07883963832006, "critic_loss": 296.84349070739745, "q1": 373.06374478149417, "q2": 373.0638410949707, "actor_loss": -0.9519209010601044, "bc_loss": 0.026693036794662475, "q_term": 0.9605027025938034}
+{"kind": "episode", "step": 184497, "n_terminations": 251, "episode": 353, "ret": 3892.36347664821, "length": 719, "terminated": true}
+{"kind": "train", "step": 185000, "n_terminations": 251, "bc_weight": 0.31999999999999995, "sps": 248.6986219454282, "critic_loss": 285.8298477706909, "q1": 373.39892333984375, "q2": 373.399164642334, "actor_loss": -0.9512201606035232, "bc_loss": 0.02662425874918699, "q_term": 0.9597532119750977}
+{"kind": "episode", "step": 185497, "n_terminations": 251, "episode": 354, "ret": 5400.832440663006, "length": 1000, "terminated": false}
+{"kind": "train", "step": 186000, "n_terminations": 251, "bc_weight": 0.31899999999999995, "sps": 244.10708039643282, "critic_loss": 279.2291964111328, "q1": 374.5460209350586, "q2": 374.54736975097654, "actor_loss": -0.9526767387390137, "bc_loss": 0.02643428372591734, "q_term": 0.9611224749088287}
+{"kind": "episode", "step": 186497, "n_terminations": 251, "episode": 355, "ret": 5628.754346982171, "length": 1000, "terminated": false}
+{"kind": "train", "step": 187000, "n_terminations": 251, "bc_weight": 0.31799999999999995, "sps": 247.89322285764473, "critic_loss": 295.0858157043457, "q1": 374.73182052612304, "q2": 374.7323241271973, "actor_loss": -0.9530893748998642, "bc_loss": 0.026499667901545763, "q_term": 0.9615294597148896}
+{"kind": "episode", "step": 187497, "n_terminations": 251, "episode": 356, "ret": 5434.846650869202, "length": 1000, "terminated": false}
+{"kind": "train", "step": 188000, "n_terminations": 251, "bc_weight": 0.31699999999999995, "sps": 247.41628288166814, "critic_loss": 290.7313309631348, "q1": 375.0556238708496, "q2": 375.05348977661134, "actor_loss": -0.952798720240593, "bc_loss": 0.02663303093612194, "q_term": 0.9612547051906586}
+{"kind": "episode", "step": 188497, "n_terminations": 251, "episode": 357, "ret": 5652.592175952555, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 188782, "n_terminations": 252, "episode": 358, "ret": 1310.1895011567735, "length": 285, "terminated": true}
+{"kind": "train", "step": 189000, "n_terminations": 252, "bc_weight": 0.31599999999999995, "sps": 248.11321329523054, "critic_loss": 277.97602182006835, "q1": 375.678015411377, "q2": 375.67893951416016, "actor_loss": -0.9537264282703399, "bc_loss": 0.026457893673330544, "q_term": 0.962100333571434}
+{"kind": "episode", "step": 189236, "n_terminations": 253, "episode": 359, "ret": 2345.494745568041, "length": 454, "terminated": true}
+{"kind": "episode", "step": 189649, "n_terminations": 254, "episode": 360, "ret": 2257.9964044551007, "length": 413, "terminated": true}
+{"kind": "train", "step": 190000, "n_terminations": 254, "bc_weight": 0.31499999999999995, "sps": 249.3723335920022, "critic_loss": 306.060510017395, "q1": 376.01067321777344, "q2": 376.008547668457, "actor_loss": -0.9537781918048859, "bc_loss": 0.026633857630193235, "q_term": 0.9621811608076095}
+{"kind": "episode", "step": 190649, "n_terminations": 254, "episode": 361, "ret": 5336.514968954167, "length": 1000, "terminated": false}
+{"kind": "train", "step": 191000, "n_terminations": 254, "bc_weight": 0.31399999999999995, "sps": 249.21713819401853, "critic_loss": 284.3262931060791, "q1": 376.7160249633789, "q2": 376.7180343322754, "actor_loss": -0.954421063542366, "bc_loss": 0.026547897063195706, "q_term": 0.9627703585624695}
+{"kind": "episode", "step": 191649, "n_terminations": 254, "episode": 362, "ret": 5567.876040776899, "length": 1000, "terminated": false}
+{"kind": "train", "step": 192000, "n_terminations": 254, "bc_weight": 0.31299999999999994, "sps": 248.6889486645144, "critic_loss": 277.22702050018313, "q1": 376.72129235839844, "q2": 376.72018231201173, "actor_loss": -0.9535020943880081, "bc_loss": 0.02655178251489997, "q_term": 0.9618260774612427}
+{"kind": "episode", "step": 192649, "n_terminations": 254, "episode": 363, "ret": 5338.25121975153, "length": 1000, "terminated": false}
+{"kind": "train", "step": 193000, "n_terminations": 254, "bc_weight": 0.312, "sps": 247.60111741829667, "critic_loss": 273.4647733078003, "q1": 377.52738470458985, "q2": 377.52628125, "actor_loss": -0.9553969149589538, "bc_loss": 0.026624126315116882, "q_term": 0.9637169632911682}
+{"kind": "episode", "step": 193649, "n_terminations": 254, "episode": 364, "ret": 5420.237177089881, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 193757, "n_terminations": 255, "episode": 365, "ret": 413.18774347103897, "length": 108, "terminated": true}
+{"kind": "train", "step": 194000, "n_terminations": 255, "bc_weight": 0.311, "sps": 248.59815089335635, "critic_loss": 283.73221253204343, "q1": 377.6483114929199, "q2": 377.649400970459, "actor_loss": -0.9544806941747666, "bc_loss": 0.026663363832980395, "q_term": 0.9627863093614578}
+{"kind": "episode", "step": 194553, "n_terminations": 256, "episode": 366, "ret": 4611.52136163416, "length": 796, "terminated": true}
+{"kind": "train", "step": 195000, "n_terminations": 256, "bc_weight": 0.31, "sps": 247.48346615773184, "critic_loss": 272.67742979431154, "q1": 377.98839556884764, "q2": 377.98595965576175, "actor_loss": -0.9555238338708878, "bc_loss": 0.02649701316282153, "q_term": 0.9637511104345322}
+{"kind": "episode", "step": 195553, "n_terminations": 256, "episode": 367, "ret": 4996.027027255597, "length": 1000, "terminated": false}
+{"kind": "train", "step": 196000, "n_terminations": 256, "bc_weight": 0.309, "sps": 249.56022215080924, "critic_loss": 280.4537035827637, "q1": 378.9051852416992, "q2": 378.9059563293457, "actor_loss": -0.9557287431955338, "bc_loss": 0.026586715556681156, "q_term": 0.9639573063850403}
+{"kind": "episode", "step": 196553, "n_terminations": 256, "episode": 368, "ret": 5673.084685946648, "length": 1000, "terminated": false}
+{"kind": "train", "step": 197000, "n_terminations": 256, "bc_weight": 0.308, "sps": 249.29143718043647, "critic_loss": 286.1604771652222, "q1": 378.86222549438475, "q2": 378.85994415283204, "actor_loss": -0.9547797343730926, "bc_loss": 0.026646005265414715, "q_term": 0.9630000109672546}
+{"kind": "episode", "step": 197390, "n_terminations": 257, "episode": 369, "ret": 4556.941865723351, "length": 837, "terminated": true}
+{"kind": "episode", "step": 197876, "n_terminations": 258, "episode": 370, "ret": 2603.8803751406795, "length": 486, "terminated": true}
+{"kind": "train", "step": 198000, "n_terminations": 258, "bc_weight": 0.307, "sps": 250.71988572688315, "critic_loss": 276.15755130004885, "q1": 379.6375975341797, "q2": 379.6375994262695, "actor_loss": -0.95632634806633, "bc_loss": 0.026617086250334977, "q_term": 0.9645110763311386}
+{"kind": "episode", "step": 198876, "n_terminations": 258, "episode": 371, "ret": 5186.688195442808, "length": 1000, "terminated": false}
+{"kind": "train", "step": 199000, "n_terminations": 258, "bc_weight": 0.306, "sps": 267.58888184344534, "critic_loss": 276.2001475601196, "q1": 379.934962890625, "q2": 379.9358653869629, "actor_loss": -0.9555694715976715, "bc_loss": 0.02676959777995944, "q_term": 0.9637743518352508}
+{"kind": "episode", "step": 199876, "n_terminations": 258, "episode": 372, "ret": 5264.994800349048, "length": 1000, "terminated": false}
+{"kind": "episode", "step": 199990, "n_terminations": 259, "episode": 373, "ret": 370.8144351746656, "length": 114, "terminated": true}
+{"kind": "train", "step": 200000, "n_terminations": 259, "bc_weight": 0.305, "sps": 272.5492135309252, "critic_loss": 270.9963143234253, "q1": 380.1355669555664, "q2": 380.13727951049805, "actor_loss": -0.9566385284662247, "bc_loss": 0.02661267741397023, "q_term": 0.9647686828374863}
+{"kind": "eval", "step": 200000, "n_terminations": 259, "mean_return": 4328.416073414254, "std_return": 2000.7236512393738, "returns": [5434.5221359100315, 5852.279845158883, 5905.769237679502, 5711.766973611122, 602.3909333947311, 5972.905179736152, 5874.222154818621, 5834.007824536804, 1587.263753535503, 1099.9617632736686, 6116.425108033943, 2094.1430690034404, 5928.490528044335, 5079.00298432311, 2497.9995420335035, 5992.050275115099, 5503.948524856334, 1069.0620314578032, 2890.015291037213, 5522.0943127252895]}

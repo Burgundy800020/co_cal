@@ -1,0 +1,38 @@
+algo:
+  alpha: 1.0
+  gamma: 0.99
+  hidden:
+  - 256
+  - 256
+  lr: 0.0001
+  noise_clip: 0.5
+  policy_delay: 2
+  policy_noise: 0.2
+  tau: 0.005
+algo_overrides:
+  alpha: 1.0
+  lr: 0.0001
+dataset: mujoco/ant/medium-v0
+device: cpu
+init_from: results/td3bc_ant_medium
+load_optim: false
+name: o2o_ant_medium_seed2
+normalize_state: true
+offline_data: true
+online:
+  batch_size: 256
+  bc_anneal_steps: 200000
+  bc_weight_end: 0.3
+  bc_weight_start: 0.5
+  critic_warmup: 5000
+  eval_episodes: 20
+  eval_every: 20000
+  expl_noise: 0.1
+  learning_starts: 0
+  log_every: 1000
+  random_steps: 0
+  save_every: 20000
+  total_steps: 200000
+  utd: 1
+online_frac: 0.5
+seed: 2
