@@ -193,6 +193,17 @@ Briefly restate your original project goal and motivation.
 What problem are you addressing, and why is it important? 
 Has your problem formulation changed since the proposal? If yes, describe why.
 
+\textbf{Change in formulation.}
+Yes, our formulation has changed. The proposal focused on conformally calibrating an offline policy 
+so that we could detect when it is unreliable. We realized that this detection signal is more useful 
+in a more actionable setting: online RL fine-tuning, where the costly events are online 
+failures/terminations (e.g., crashing a robot). We therefore now ask whether a budgeted 
+expert, who intervenes when the policy looks unreliable, can let us fine-tune an offline policy 
+online to the same performance at much lower failure cost. This turns a purely diagnostic question into 
+one with a clear payoff.
+
+
+
 \section{Progress and Technical Work So Far [13 points]}
 Describe your technical progress to date.
 \begin{itemize}

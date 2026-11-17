@@ -5,3 +5,7 @@
 - Fine-tuning loss: TD3 + online BC on expert steps; how to weight the two?
 - Expert: infinite-budget online RL on top of the offline model (mimics a human who can recover).
 - Evaluation: episode return vs. number of online terminations; compare to offline-to-online TD3 and DAgger.
+
+## Online BC reg 
+- Which ones to bc? replay, offline dataset, both?
+- BC lasts for entire training run or only the first phase?

@@ -1,0 +1,28 @@
+# Phase 1: unlimited-budget online fine-tuning of the offline TD3+BC Ant policy (expert init / O2O baseline).
+name: online_td3_ant_medium
+init_from: results/td3bc_ant_medium   # any run dir with config.yaml + model.pt (+ state_norm.npz)
+dataset: null                         # null -> checkpoint's dataset (also defines the env)
+seed: 0 
+device: cpu
+offline_data: true                    # use the offline dataset as replay data
+online_frac: 0.5                      # batch share from online data; null -> one uniform buffer (O2O baseline)
+load_optim: false                     # fresh Adam state for the new phase
+algo_overrides: {
+  lr: 1.0e-4,                           # override the LR from the checkpoint
+  alpha: 1.0
+}                    # e.g. {lr: 1.0e-4}; nets must match checkpoint
+online:
+  total_steps: 160_000
+  batch_size: 256
+  utd: 1
+  learning_starts: 0
+  random_steps: 0
+  critic_warmup: 5_000                # critic-only updates while it adapts to online data
+  expl_noise: 0.1
+  bc_weight_start: 4.0                # TD3+BC ...
+  bc_weight_end: 2.5                  # ... -> TD3
+  bc_anneal_steps: 160_000
+  eval_every: 20_000
+  eval_episodes: 20
+  save_every: 20_000
+  log_every: 1000
