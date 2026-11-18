@@ -165,14 +165,12 @@ showstringspaces=false
 \definecolor{highlightcorrect}{RGB}{179, 255, 179} 
 \newcommand{\rr}[1]{\textbf{\color{green}[RR: #1]}}
 
-\title{Project Title [total 20 points]}
+\title{Safe-f2o: Failure-efficient Offline-to-Online RL Fine-tuning with a Budgeted Expert}
 
 % \reportnumber{} 
 
-\author[1]{A1}
-\author[2]{A2}
-\author[1]{A3}
-\author[1]{A4}
+\author[1]{Yizhou Wang}
+\author[1]{Melody Gao}
 
 \affil[1]{Carnegie Mellon University}
 
@@ -181,7 +179,15 @@ showstringspaces=false
 \hyphenation{pre-print}
 
 \begin{abstract}
-Project abstract: short summary of what was accomplished in the first 3 weeks of the project.
+Online RL fine-tuning of an offline-pretrained policy is costly mainly because of online failures,
+such as a robot falling over. This is especially frequent if the offline behavior is suboptimal.
+We investigate whether adding a budgeted expert who takes over when the policy is unreliable
+can reduce the number of online
+terminations needed to reach the same return. So far, on MuJoCo Ant (Minari \texttt{medium} data), we have trained an offline TD3+BC
+policy and fine-tuned it online with an unlimited budget. Fine-tuning raises the return from about 600 to about 4300,
+at a cost of about 270 terminations; this run is both our baseline and our expert. Keeping BC
+regularisation online was essential. In a rollout of the offline policy, $Q$ drops about 10 steps
+before a fall, which supports $Q$-based gating. Code: \url{https://github.com/Burgundy800020/co_cal}.
 \end{abstract}
 
 \begin{document}
@@ -193,12 +199,18 @@ Briefly restate your original project goal and motivation.
 What problem are you addressing, and why is it important? 
 Has your problem formulation changed since the proposal? If yes, describe why.
 
+\textbf{Goal and motivation.}
+Offline-to-online RL fine-tunes an offline-pretrained policy through online interaction, but in real
+deployments every online failure (e. g. a crashed robot) is costly. We aim to match the return
+of standard fine-tuning while incurring far fewer online terminations, by spending a limited expert
+budget only when the learner is unreliable.
+
 \textbf{Change in formulation.}
 Yes, our formulation has changed. The proposal focused on conformally calibrating an offline policy 
 so that we could detect when it is unreliable. We realized that this detection signal is more useful 
 in a more actionable setting: online RL fine-tuning, where the costly events are online 
-failures/terminations (e.g., crashing a robot). We therefore now ask whether a budgeted 
-expert, who intervenes when the policy looks unreliable, can let us fine-tune an offline policy 
+failures/terminations. We therefore now ask whether a budgeted 
+expert, who intervenes when the learner is unreliable, can let us fine-tune an offline policy 
 online to the same performance at much lower failure cost. This turns a purely diagnostic question into 
 one with a clear payoff.
 
@@ -212,9 +224,80 @@ Describe your technical progress to date.
     \item Highlight key insights, unexpected results, or implementation challenges.
 \end{itemize}
 
+So far we have finished the first two stages of our pipeline on Ant: offline pretraining and
+unlimited-budget offline-to-online (O2O) fine-tuning. The O2O run is both our main baseline and the
+source of the expert for stage three.
+
+\textbf{Stage 1: offline TD3+BC.}
+We implemented TD3+BC~\cite{fujimoto2021minimalist}. Its actor loss is
+$-\lambda\, Q(s,\pi(s)) + w_{\text{BC}}\,\|\pi(s)-a\|^2$ with $\lambda = \alpha / \overline{|Q|}$, and it
+normalises states using dataset statistics. The weight $w_{\text{BC}}$ lets us move smoothly from
+TD3+BC ($w_{\text{BC}}=1$) to plain TD3 ($w_{\text{BC}}=0$) during fine-tuning. On Ant we trained for
+20k gradient steps ($\alpha=4$, learning rate $3\cdot10^{-4}$, $256\times256$ MLPs) on the \texttt{medium}
+dataset (\cref{fig:offline_ant}). The policy reaches an evaluation return of
+$1041 \pm 1194$ over 20 episodes. The very large spread is the important part: some episodes
+reach $\sim$5000, while many end almost immediately because the ant falls over. This makes it
+a good starting point for fine-tuning: it is good enough to be worth fine-tuning but still fails often.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{figures/td3bc_ant_medium_training.png}
+    \caption{Offline TD3+BC on \texttt{ant/medium-v0}. From top to bottom: evaluation return (mean and min--max over 20 episodes),
+    mean $Q$ on dataset actions, critic loss, and actor/BC loss.}
+    \label{fig:offline_ant}
+\end{figure}
+
+\textbf{Stage 2: offline-to-online fine-tuning (unlimited budget).}
+We built an environment-agnostic online loop that tracks the cumulative number of online terminations,
+our cost axis. Only true failures count, not time-limit truncations. The loop takes a pluggable
+reset function, which we will later use to start episodes from expert handover states. We start
+from the offline \texttt{medium} checkpoint with fresh Adam optimisers (learning rate $10^{-4}$, $\alpha=1$).
+The offline data stays in the replay buffer, and each batch is half offline and half online, as in
+RLPD~\cite{ball2023efficient}. Before updating the actor, we run 5k critic-only steps so that the critic
+can adapt to online data. The BC weight is annealed from 0.5 to 0.3 over 200k environment steps,
+with exploration noise 0.1 and an update-to-data ratio of 1.
+
+\Cref{fig:o2o_ant} shows the results over 5 seeds. Fine-tuning raises the evaluation return from
+$601 \pm 62$ to $4313 \pm 159$ in 200k steps. This costs $271 \pm 23$ online terminations, out of
+about 380 episodes, so roughly 70\% of training episodes end with the robot falling. 
+Terminations pile up fastest at the start (about 60
+in the first 25k steps), when the policy is weakest. This is exactly where a budgeted expert should
+help most. The fine-tuned policy ($\sim$4300 return) will serve as the expert in stage three.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{figures/o2o_ant_medium_seeds.png}
+    \caption{Unlimited-budget O2O fine-tuning from offline TD3+BC on \texttt{ant/medium-v0} (5 seeds,
+    mean $\pm$ 1 std). Left: evaluation return vs.\ environment steps. Middle: evaluation return vs.\
+    cumulative online terminations, our key metric. Right: cumulative terminations vs.\ environment steps.}
+    \label{fig:o2o_ant}
+\end{figure}
+
+\textbf{Can $Q$ pre-detect failures?}
+To check whether $Q$ is a usable unreliability signal, we recorded the offline policy rolling out on
+Ant with $Q(s,\pi(s))$ overlaid on each frame (video in \cref{app:video}).
+The ant falls and the episode terminates after about 250 steps, and $Q$ visibly drops about 10 steps
+\emph{before} the termination. This is only a single qualitative example, but it suggests the critic can
+flag unreliable states early enough for an expert to take over before the failure happens, which is
+the premise of our method.
+
 \begin{AIbox}{Takeaways box}
 % \footnotesize
-Your awesome takeaways go here
+With suboptimal offline data, the offline policy may sit near a local optimum, and offline-to-online
+fine-tuning faces a choice between two strategies:
+\begin{enumerate}[leftmargin=*, itemsep=0pt]
+    \item \textbf{Keep BC regularisation online.} Learning is stable, but performance is bounded
+    near the local optimum that the offline policy and data define.
+    \item \textbf{Drop BC regularisation.} The policy can in principle escape that optimum, but it suffers
+    an early performance dip and risks degenerating into online RL from scratch, which wastes the
+    offline pretraining and causes many failures.
+\end{enumerate}
+On Ant-medium we tried both with our specific offline checkpoint, and only strategy 1 worked. We therefore
+keep a BC weight (annealed from 0.5 to 0.3), which reaches a return of $\sim$4300.
+
+\smallskip
+In a rollout of the offline policy, $Q$ drops about 10 steps before the ant falls. This suggests
+$Q$ can flag an unreliable policy early enough for a budgeted expert to step in.
 \end{AIbox}
 
 
@@ -225,6 +308,22 @@ Your awesome takeaways go here
     \item Report approximate compute usage (e.g., GPU hours or cluster nodes).
 \end{itemize}
 
+\textbf{Datasets and environments.}
+We use the Minari MuJoCo datasets (\texttt{mujoco/\{ant, walker2d\}/\{simple, medium\}-v0})
+for offline pretraining. The matching Gymnasium MuJoCo environments (recovered from the datasets so that versions
+and settings match) are used for online fine-tuning. This is because Ant and Walker2d have true
+failure terminations (the robot falls or becomes unhealthy).
+
+\textbf{Preprocessing and setup.}
+We normalise states using the mean and standard deviation of the offline dataset and apply the same
+statistics online. Only true terminations stop bootstrapping and count as online failures; time-limit
+truncations do not. During fine-tuning, the offline data stays in the replay buffer, and each batch draws
+half its samples from offline data and half from online data.
+
+\textbf{Compute.}
+Everything runs on CPU on a laptop. Each offline TD3+BC run takes a few
+minutes. A 200k-step online fine-tuning run takes about 10--15 minutes (around 300 env steps/s).
+
 \section{Updated Plan and Next Steps [5 points]}
 Summarize your plan for the remainder of the semester.
 \begin{itemize}
@@ -233,13 +332,64 @@ Summarize your plan for the remainder of the semester.
     \item Identify potential risks or blockers and mitigation strategies.
 \end{itemize}
 
+\textbf{Remaining work.}
+Stages 1 and 2 are done on Ant-medium. What remains is stage 3, our method: online TD3 fine-tuning
+in which a $Q$-gated expert (the fine-tuned policy) takes over for a few steps under a fixed
+intervention budget, plus online BC on the expert steps. We will compare it with the unlimited-budget
+O2O baseline and with DAgger, plotting return vs.\ online terminations.
+
+\textbf{Timeline.}
+\begin{itemize}[itemsep=0pt]
+    \item \textbf{Week 1:} Implement the expert-intervention loop (gating, handover, and BC on expert
+    steps) and the $Q$ threshold calibration. Run first single-seed tests on Ant-medium.
+    \item \textbf{Week 2:} Run the full 5-seed comparison against O2O and DAgger, plus a sweep over intervention
+    budgets. Make the video and poster for the presentation at the \textbf{end of week 2}.
+    \item \textbf{Week 3:} Run ablations of the gating signal and BC on expert steps, run a second environment
+    (Walker2d) if time allows, and write the \textbf{final report} at the \textbf{end of week 3}.
+\end{itemize}
+
+\textbf{Risks and mitigation.}
+(1) The scale of $Q$ shifts early in fine-tuning, so a fixed threshold may trigger interventions poorly.
+We will try relative or normalised $Q$ signals and recalibrate on recent online data.
+(2) $Q$ may give no warning before many failures, beyond the single rollout in \cref{app:video}.
+We will first measure how often and how early $Q$ drops before terminations, and we will fall back on
+other uncertainty signals (e.g., critic disagreement) if it is unreliable. (3) Time is short, so Ant-medium takes priority, and other environments are optional.
+
 \section{Team Contributions}
 List major responsibilities of each member (implementation, experiments, writing, etc.), 
 and describe any changes in team organization or workload balance.
 
+\begin{itemize}
+    \item \textbf{Yizhou Wang:} Experimental design. Reformulated the project around failure-efficient offline-to-online
+    fine-tuning and the return-vs.-terminations metric.
+    Ideated the $Q$-based intervention signal.
+    \item \textbf{Melody Gao:} Code implementation and experiments. Run 
+    experiments across environments, hyperparameters, and seeds.
+\end{itemize}
+
 \section{Reflection and Feedback}
 Discuss what you have learned so far, what challenges remain, 
 and what feedback or support you would like from the course staff (e.g., technical feedback, compute, additional readings).
+
+\textbf{What we learned.}
+With suboptimal offline data, offline-to-online fine-tuning involves a real trade-off between keeping BC
+regularisation, which is stable but bounded by the offline policy, and dropping it, which risks a collapse
+into learning from scratch. On Ant, only the regularised option worked. We also saw early evidence
+that $Q$ drops shortly before a failure, which supports using it as the intervention signal.
+
+\textbf{Remaining challenge: a moving $Q$ scale.}
+At the start of online fine-tuning, the critic adapts to online data and the overall scale of
+$Q$ shifts. As a result, a fixed threshold calibrated offline no longer tells us what counts as a
+``low'' $Q$, and the intervention trigger can fire too often, wasting budget, or too rarely, letting
+failures through. We are considering relative signals (e.g., a drop in $Q$ along the trajectory, or
+$Q$ normalised by a running estimate of its scale) and periodically recalibrating the threshold on recent
+online data, as ThriftyDAgger~\cite{hoque2021thriftydagger} does with its risk threshold.
+
+\textbf{Feedback requested.}
+We would most value feedback on our research design. Is the offline-to-online setting, with
+``return vs.\ number of online terminations'' as the key metric, the best way to evaluate
+failure-efficient fine-tuning? Is using a fine-tuned policy as the budgeted expert a reasonable proxy
+for a human or safe controller? 
 
 
 
@@ -252,5 +402,13 @@ and what feedback or support you would like from the course staff (e.g., technic
 \appendix
 \onecolumn
 \part*{Appendices}
+
+\section{Rollout video with $Q$-values}
+\label{app:video}
+\url{https://drive.google.com/file/d/1elGXkT-8ZKsVjD1gcoxnqWIkKPHW9N3e/view?usp=sharing}
+
+The video shows one rollout of the offline TD3+BC policy on \texttt{ant/medium-v0}, with
+$Q(s,\pi(s))$ overlaid on each frame. The ant falls and the episode terminates after about 250 steps,
+and $Q$ drops about 10 steps before the termination.
 
 \end{document}
